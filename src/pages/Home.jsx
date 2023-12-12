@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaGoogle } from "react-icons/fa";
 import React from "react";
 import Soci from "../components/Soci";
+import Candle from "../components/Candle";
 const Home = () => {
   return (
     <div
@@ -18,10 +19,14 @@ const Home = () => {
       </p>
 
       <Soci />
+      
+       
 
       <p className="text-sm mt-10 font-black">
         ©2023 achieve-software <hr />
       </p>
+      
+      
     </div>
   );
 };
