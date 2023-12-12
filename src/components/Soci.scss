@@ -2,7 +2,7 @@ $color_1: #3b5999;
 $color_2: #55acee;
 $color_3: #dd4b39;
 $color_4: #e4405f;
-$color_5: #ffffff;
+$color_5: white;
 
 .social {
 	margin: 0;
@@ -145,7 +145,7 @@ $color_5: #ffffff;
 		}
 		&:nth-child(5) {
 			a {
-				color: $color_4;
+				color: $color_5;
 			}
 			&:hover {
 				a {

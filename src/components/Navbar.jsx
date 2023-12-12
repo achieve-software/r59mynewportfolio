@@ -36,7 +36,7 @@ const Navbar = () => {
             <li className="m-10 ">
               <Link
                 to="/"
-                className="text-white text-2xl hover:text-blue-600 hover:bg-yellow-300"
+                className="text-white text-2xl font-black hover:text-black hover:bg-yellow-300 transition duration-300 ease-in-out"
                 onClick={toggleMenu}
               >
                 Home
@@ -47,7 +47,7 @@ const Navbar = () => {
             <li className="m-10">
               <Link
                 to="/skills"
-                className="text-white text-2xl   hover:text-blue-600 hover:bg-yellow-300  "
+                className="text-white text-2xl font-black   hover:text-black hover:bg-yellow-300 transition duration-300 ease-in-out  "
                 onClick={toggleMenu}
               >
                 Skills
@@ -57,7 +57,7 @@ const Navbar = () => {
             <li className="m-10">
               <Link
                 to="/projects"
-                className="text-white text-2xl   hover:text-blue-600 hover:bg-yellow-300  "
+                className="text-white text-2xl font-black  hover:text-black hover:bg-yellow-300 transition duration-300 ease-in-out  "
                 onClick={toggleMenu}
               >
                 Projects
@@ -67,7 +67,7 @@ const Navbar = () => {
             <li className="m-10">
               <Link
                 to="/about"
-                className="text-white text-2xl   hover:text-blue-600 hover:bg-yellow-300  "
+                className="text-white text-2xl font-black  hover:text-black hover:bg-yellow-300 transition duration-300 ease-in-out  "
                 onClick={toggleMenu}
               >
                 About
@@ -78,7 +78,7 @@ const Navbar = () => {
             <li className="m-10">
               <Link
                 to="/contact"
-                className="text-white text-2xl   hover:text-blue-600 hover:bg-yellow-300   "
+                className="text-white text-2xl font-black  hover:text-black hover:bg-yellow-300 transition duration-300 ease-in-out   "
                 onClick={toggleMenu}
               >
                 Contact
