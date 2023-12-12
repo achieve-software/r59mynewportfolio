@@ -20,14 +20,14 @@ const Navbar = () => {
 
       {/* Sidebar */}
       <div
-        className={`bg-blue-500 p-4 w-64 ${
+        className={`bg-stone-700 p-4 w-64 ${
           isOpen ? "block" : "hidden"
         } sm:block `} 
       >
         <div className="flex items-center justify-center mb-24">
           <img
-            className="w-36 h-36 rounded-full border-2 border-white"
-            src="https://placekitten.com/200/200" // Profil fotoğrafınızın URL'sini ekleyin
+            className="w-36 h-36 rounded-full border-2 border-white mt-"
+            src="https://placekitten.com/200/201" // Profil fotoğrafınızın URL'sini ekleyin
             alt="Profil"
           />
         </div>
