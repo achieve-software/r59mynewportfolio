@@ -1,0 +1,163 @@
+$color_1: #3b5999;
+$color_2: #55acee;
+$color_3: #dd4b39;
+$color_4: #e4405f;
+$color_5: #ffffff;
+
+.social {
+	margin: 0;
+	list-style: none;
+	padding-left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	.social-item {
+		margin: 0 30px;
+		width: 40px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.social-link {
+			position: relative;
+			display: inline-block;
+		  }
+		  
+		  .social-name {
+			color: black;
+			font-weight: bolder;
+			font-size: large;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(40%, -40%);
+			opacity: 0; /* Başlangıçta gizli olacak */
+			transition: opacity 0.3s ease-in-out; /* Geçiş efekti */
+		  }
+		  
+		  .social-link:hover .social-name {
+			opacity: 1; /* Üzerine gelindiğinde görünür olacak */
+		  }
+		.social-link {
+			position: relative;
+			
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: #fff;
+			text-align: center;
+			transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+			transition: all 0.4s ease;
+			&::before {
+				content: "";
+				position: absolute;
+				top: 5px;
+				left: -10px;
+				height: 100%;
+				width: 10px;
+				background: #b1b1b1;
+				transition: all 0.4s ease;
+				transform: rotate(0deg) skewY(-45deg);
+			}
+			&::after {
+				content: "";
+				position: absolute;
+				top: 40px;
+				left: -5px;
+				height: 10px;
+				width: 100%;
+				background: #b1b1b1;
+				transition: all 0.4s ease;
+				transform: rotate(0deg) skewX(-45deg);
+			}
+			&:hover {
+				transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(10px, -10px);
+				box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+				color: $color_5;
+			}
+		}
+		&:nth-child(1) {
+			a {
+				color: $color_1;
+			}
+			&:hover {
+				a {
+					background: #3b5999;
+					&::before {
+						background: #3b5999;
+					}
+					&::after {
+						background: #3b5999;
+					}
+				}
+			}
+		}
+		&:nth-child(2) {
+			a {
+				color: $color_2;
+			}
+			&:hover {
+				a {
+					background: #55acee;
+					&::before {
+						background: #55acee;
+					}
+					&::after {
+						background: #55acee;
+					}
+				}
+			}
+		}
+		&:nth-child(3) {
+			a {
+				color: $color_3;
+			}
+			&:hover {
+				a {
+					background: #dd4b39;
+					&::before {
+						background: #dd4b39;
+					}
+					&::after {
+						background: #dd4b39;
+					}
+				}
+			}
+		}
+		&:nth-child(4) {
+			a {
+				color: $color_4;
+			}
+			&:hover {
+				a {
+					background: #0288D1;
+					&::before {
+						background: #0288D1;
+					}
+					&::after {
+						background: #0288D1;
+					}
+				}
+			}
+		}
+		&:nth-child(5) {
+			a {
+				color: $color_4;
+			}
+			&:hover {
+				a {
+					background: white;
+					&::before {
+						background: black;
+					}
+					&::after {
+						background: black;
+					}
+				}
+			}
+		}
+	}
+}

@@ -33,52 +33,57 @@ const Navbar = () => {
         </div>
         <nav className="sm:block flex items-center justify-center">
           <ul className="bg-color bg-blue-950 rounded-lg">
-            <li className="mb-10">
+            <li className="m-10 ">
               <Link
                 to="/"
-                className="text-white text-2xl   hover:text-blue-600"
+                className="text-white text-2xl hover:text-blue-600 hover:bg-yellow-300"
                 onClick={toggleMenu}
               >
                 Home
-              </Link>
+              </Link>{" "}
+              <hr />
             </li>
 
-            <li className="mb-10">
+            <li className="m-10">
               <Link
                 to="/skills"
-                className="text-white text-2xl   hover:text-blue-600"
+                className="text-white text-2xl   hover:text-blue-600 hover:bg-yellow-300  "
                 onClick={toggleMenu}
               >
                 Skills
-              </Link>
+              </Link>{" "}
+              <hr />
             </li>
-            <li className="mb-10">
+            <li className="m-10">
               <Link
                 to="/projects"
-                className="text-white text-2xl   hover:text-blue-600"
+                className="text-white text-2xl   hover:text-blue-600 hover:bg-yellow-300  "
                 onClick={toggleMenu}
               >
                 Projects
-              </Link>
+              </Link>{" "}
+              <hr />
             </li>
-            <li className="mb-10">
+            <li className="m-10">
               <Link
                 to="/about"
-                className="text-white text-2xl   hover:text-blue-600"
+                className="text-white text-2xl   hover:text-blue-600 hover:bg-yellow-300  "
                 onClick={toggleMenu}
               >
                 About
-              </Link>
+              </Link>{" "}
+              <hr />
             </li>
 
-            <li className="mb-2">
+            <li className="m-10">
               <Link
                 to="/contact"
-                className="text-white text-2xl   hover:text-blue-600"
+                className="text-white text-2xl   hover:text-blue-600 hover:bg-yellow-300   "
                 onClick={toggleMenu}
               >
                 Contact
-              </Link>
+              </Link>{" "}
+              <hr />
             </li>
             {/* Diğer sayfa linkleri buraya eklenebilir */}
           </ul>
