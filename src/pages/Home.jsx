@@ -1,23 +1,29 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-
+import { Link } from "react-router-dom";
+import { FaGithub, FaLinkedin, FaGoogle } from "react-icons/fa";
+import React from "react";
 const Home = () => {
   return (
-    
-      <div className="flex flex-col items-start justify-center h-screen bg-gray-200 text-gray-800 p-10">
-        <h1 className="text-5xl mb-2">Hi, I am Alexandro Victor</h1>
-        <p className="text-xl mb-10">I am full stack web developer. I have Experience in Developing Websites, Web Applications, Mobile Games (Android & iOS), and Flutter Mobile Applications. We are providing clean code.</p>
-        <div className="flex space-x-4">
-        <Link to="/facebook" className="text-blue-600 hover:underline">Facebook</Link>
-          <Link to="/twitter" className="text-blue-600 hover:underline">Twitter</Link>
-          <Link to="/github" className="text-blue-600 hover:underline">GitHub</Link>
-          <Link to="/instagram" className="text-blue-600 hover:underline">Instagram</Link>
-          <Link to="/linkedin" className="text-blue-600 hover:underline">LinkedIn</Link>
-        </div>
-        <p className="text-sm mt-10">©2021 Reactor Portfolio</p>
+    <div style={{ backgroundImage: `url('./images/background.jpg')` }} className="bg-cover bg-center flex flex-col items-center justify-center h-screen bg-gray-200 text-gray-800 p-10 "    >
+      <h1 className="text-5xl mb-2">Hi, I am Mike</h1>
+      <p className="text-xl mb-10 text-left">
+        I am a full-stack web developer. I have experience in developing
+        websites, web applications, mobile games (Android & iOS), and Flutter
+        mobile applications. I provide clean code.
+      </p>
+      <div className="flex space-x-6 text-5xl">
+        <Link to="/github" target="_blank" className="text-stone-600 hover:text-blue-700">
+          <FaGithub className="inline-block" />
+        </Link>
+        <Link to="/google"  target="_blank" className="text-stone-700 hover:text-blue-700">
+          <FaGoogle className="inline-block" />
+        </Link>
+        <Link to="/linkedin"  target="_blank" className="text-stone-600   hover:text-blue-700">
+          <FaLinkedin className="inline-block" />
+        </Link>
+       
       </div>
-    );
-  
-}
-
-export default Home
+      <p className="text-sm mt-10">©2023 Reactor Portfolio</p>
+    </div>
+  );
+};
+export default Home;
