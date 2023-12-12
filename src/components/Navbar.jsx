@@ -22,7 +22,7 @@ const Navbar = () => {
       <div
         className={`bg-stone-700 p-4 w-64 ${
           isOpen ? "block" : "hidden"
-        } sm:block `} 
+        } sm:block `}
       >
         <div className="flex items-center justify-center mb-24">
           <img
@@ -32,11 +32,11 @@ const Navbar = () => {
           />
         </div>
         <nav className="sm:block flex items-center justify-center">
-          <ul className="bg-color bg-amber-200 rounded-lg">
+          <ul className="bg-color bg-blue-950 rounded-lg">
             <li className="mb-10">
               <Link
                 to="/"
-                className="text-white text-2xl text-slate-950 hover:text-blue-600"
+                className="text-white text-2xl   hover:text-blue-600"
                 onClick={toggleMenu}
               >
                 Home
@@ -46,7 +46,7 @@ const Navbar = () => {
             <li className="mb-10">
               <Link
                 to="/skills"
-                className="text-white text-2xl text-slate-950 hover:text-blue-600"
+                className="text-white text-2xl   hover:text-blue-600"
                 onClick={toggleMenu}
               >
                 Skills
@@ -55,7 +55,7 @@ const Navbar = () => {
             <li className="mb-10">
               <Link
                 to="/projects"
-                className="text-white text-2xl text-slate-950 hover:text-blue-600"
+                className="text-white text-2xl   hover:text-blue-600"
                 onClick={toggleMenu}
               >
                 Projects
@@ -64,7 +64,7 @@ const Navbar = () => {
             <li className="mb-10">
               <Link
                 to="/about"
-                className="text-white text-2xl text-slate-950 hover:text-blue-600"
+                className="text-white text-2xl   hover:text-blue-600"
                 onClick={toggleMenu}
               >
                 About
@@ -74,7 +74,7 @@ const Navbar = () => {
             <li className="mb-2">
               <Link
                 to="/contact"
-                className="text-white text-2xl text-slate-950 hover:text-blue-600"
+                className="text-white text-2xl   hover:text-blue-600"
                 onClick={toggleMenu}
               >
                 Contact
