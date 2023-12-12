@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex h-screen bg-gray-100">
+    <div className="flex h-screen  bg-gray-100">
       {/* Hamburger Menü Butonu */}
       <button
         className="sm:hidden fixed top-4 left-4 p-2 bg-blue-500 text-white rounded"
@@ -22,21 +22,21 @@ const Navbar = () => {
       <div
         className={`bg-blue-500 p-4 w-64 ${
           isOpen ? "block" : "hidden"
-        } sm:block`}
+        } sm:block `} 
       >
-        <div className="flex items-center justify-center mb-4">
+        <div className="flex items-center justify-center mb-24">
           <img
             className="w-36 h-36 rounded-full border-2 border-white"
             src="https://placekitten.com/200/200" // Profil fotoğrafınızın URL'sini ekleyin
             alt="Profil"
           />
         </div>
-        <nav className="sm:block">
-          <ul className="bg-color bg-amber-200">
+        <nav className="sm:block flex items-center justify-center">
+          <ul className="bg-color bg-amber-200 rounded-lg">
             <li className="mb-10">
               <Link
                 to="/"
-                className="text-white text-2xl text-slate-950 hover:text-gray-200"
+                className="text-white text-2xl text-slate-950 hover:text-blue-600"
                 onClick={toggleMenu}
               >
                 Home
@@ -46,7 +46,7 @@ const Navbar = () => {
             <li className="mb-10">
               <Link
                 to="/skills"
-                className="text-white text-2xl text-slate-950 hover:text-gray-200"
+                className="text-white text-2xl text-slate-950 hover:text-blue-600"
                 onClick={toggleMenu}
               >
                 Skills
@@ -55,7 +55,7 @@ const Navbar = () => {
             <li className="mb-10">
               <Link
                 to="/projects"
-                className="text-white text-2xl text-slate-950 hover:text-gray-200"
+                className="text-white text-2xl text-slate-950 hover:text-blue-600"
                 onClick={toggleMenu}
               >
                 Projects
@@ -64,7 +64,7 @@ const Navbar = () => {
             <li className="mb-10">
               <Link
                 to="/about"
-                className="text-white text-2xl text-slate-950 hover:text-gray-200"
+                className="text-white text-2xl text-slate-950 hover:text-blue-600"
                 onClick={toggleMenu}
               >
                 About
@@ -74,7 +74,7 @@ const Navbar = () => {
             <li className="mb-2">
               <Link
                 to="/contact"
-                className="text-white text-2xl text-slate-950 hover:text-gray-200"
+                className="text-white text-2xl text-slate-950 hover:text-blue-600"
                 onClick={toggleMenu}
               >
                 Contact
@@ -84,8 +84,6 @@ const Navbar = () => {
           </ul>
         </nav>
       </div>
-
-      
     </div>
   );
 };
