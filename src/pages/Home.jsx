@@ -13,7 +13,7 @@ const Home = () => {
         Hi, I am Alex Victor.
       </h1>
       <p className="text-2xl mb-8 text-center text-custom-secondary">
-        I am a full-stack web developer specializing in frontend and backend.
+        I am a full-stack web developer specializing in front-end and back-end. <br />
         Combining my passion for coding with functional and aesthetic web
         solutions is not just a profession but also a passion for me.
       </p>
