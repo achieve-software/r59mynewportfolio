@@ -2,27 +2,37 @@ import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaGoogle } from "react-icons/fa";
 import React from "react";
 import Soci from "../components/Soci";
-import Candle from "../components/Candle";
+import TableCard from "../components/TableCard";
+import Button from "../components/Button";
+
 const Home = () => {
   return (
     <div
       style={{ backgroundImage: `url('./images/9.jpg')` }}
       className="w-full bg-cover bg-center flex flex-col items-center justify-center h-screen bg-gray-200 text-gray-800 p-10 "
     >
-      <h1 className="text-6xl mb-4 font-bold text-center text-custom-primary">
-        Hi, I am Alex Victor.
-      </h1>
-      <p className="text-2xl mb-8 text-center text-custom-secondary">
-        I am a full-stack web developer specializing in front-end and back-end. <br />
-        Combining my passion for coding with functional and aesthetic web
-        solutions is not just a profession but also a passion for me.
-      </p>
+      <div>
 
-      <Soci />
+     
+       <h1 className="text-4xl mb-4 font-bold text-center font-serif text-custom-primary animate__animated animate__rollIn">
+      Hi, I am Alex Victor.
+    </h1>
+    <ul  className="text-2xl mb-4  text-center font-Dancing Script  animate__animated animate__backInDown">
+      <li className="animate__animated animate__backInDown">Full Stack Developer</li>
+     
+      <li  className="animate__animated animate__backInUp">Front-End & Back-End</li>
+     
+     
       
+    </ul>
+    </div>
+      <Soci />
+      <Button/>
+      <TableCard />
+    
        
-
-      <p className="text-sm mt-10 font-black">
+<br />
+      <p className="text-sm mt-40 font-black">
         ©2023 achieve-software <hr />
       </p>
       

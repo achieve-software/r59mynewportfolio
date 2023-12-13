@@ -1,0 +1,95 @@
+$color_1: gray;
+$color_2: #000;
+$background-color_1: #000;
+$background-color_2: red;
+
+button {
+	padding: 10px 30px;
+	background-color: $background-color_1;
+	border: none;
+	font-size: 18px;
+	position: relative;
+	transition: 500ms;
+	margin-bottom: 60px;
+	cursor: pointer;
+	span {
+		color: $color_1;
+		position: relative;
+		transition: 500ms;
+		transition-delay: 500ms;
+		font-size: 16px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-weight: 600;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		width: 0%;
+		height: 0%;
+		left: 50%;
+		right: 50%;
+		top: 50%;
+		bottom: 50%;
+		transition: 500ms;
+		transition-delay: 500ms;
+		background-color: $background-color_2;
+		box-shadow: 0 0 10px red, 0 0 30px red, 0 0 50px red;
+	}
+	div {
+		transition: 500ms;
+		position: absolute;
+		background-color: $background-color_2;
+		box-shadow: 0 0 15px red, 0 0 30px red, 0 0 50px red;
+	}
+	.top {
+		width: 15px;
+		height: 2px;
+		top: 0;
+		left: 0;
+	}
+	.bottom {
+		width: 15px;
+		height: 2px;
+		bottom: 0;
+		right: 0;
+	}
+	.left {
+		width: 2px;
+		height: 15px;
+		top: 0;
+		left: 0;
+	}
+	.right {
+		width: 2px;
+		height: 15px;
+		bottom: 0;
+		right: 0;
+	}
+	&:hover {
+		color: $color_2;
+		span {
+			color: $color_2;
+		}
+		&:before {
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+		.top {
+			width: 100%;
+		}
+		.bottom {
+			width: 100%;
+		}
+		.left {
+			height: 100%;
+		}
+		.right {
+			height: 100%;
+		}
+	}
+}

@@ -26,7 +26,7 @@ const Navbar = () => {
       >
         <div className="flex items-center justify-center mb-24">
           <img
-            className="w-36 h-36 rounded-full border-2 border-white mt-"
+            className="rounded-full border-2 border-white mt-4 w-48 h-48"
             src="https://placekitten.com/200/201" // Profil fotoğrafınızın URL'sini ekleyin
             alt="Profil"
           />
