@@ -6,6 +6,7 @@ import TableCard from "../components/TableCard";
 import Button from "../components/Button";
 
 const Home = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <div
       style={{ backgroundImage: `url('./images/9.jpg')` }}
@@ -33,7 +34,7 @@ const Home = () => {
        
 <br />
       <p className="text-sm mt-40 font-black">
-        ©2023 achieve-software <hr />
+      achieve-software &copy; {currentYear} <hr />
       </p>
       
       

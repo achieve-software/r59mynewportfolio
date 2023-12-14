@@ -2,7 +2,7 @@ import React from 'react'
 import "./Button.scss";
 const Button = () => {
   return (
-    <button>
+    <button className='button1'>
     <span>DOWNLOAD MY CV</span>
     <div class="top"></div>
     <div class="left"></div>
