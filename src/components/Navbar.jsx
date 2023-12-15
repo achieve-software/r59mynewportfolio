@@ -27,12 +27,12 @@ const Navbar = () => {
         <div className="flex items-center justify-center mb-24">
           <img
             className="rounded-full border-2 border-white mt-4 w-48 h-48"
-            src="https://placekitten.com/200/201" // Profil fotoğrafınızın URL'sini ekleyin
+            src="./images/dg.jpg" // Profil fotoğrafınızın URL'sini ekleyin
             alt="Profil"
           />
         </div>
         <nav className="sm:block flex items-center justify-center">
-          <ul className="bg-color bg-blue-950 rounded-lg">
+          <ul style={{ backgroundImage: `url('./images/12.jpg')` }} className="rounded-lg  ">
             <li className="m-10 ">
               <Link
                 to="/"
