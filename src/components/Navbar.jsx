@@ -20,7 +20,7 @@ const Navbar = () => {
 
       {/* Sidebar */}
       <div
-        className={`bg-stone-700 p-4 w-64 ${
+        className={`bg-indigo-300 p-4 w-64 ${
           isOpen ? "block" : "hidden"
         } sm:block `}
       >

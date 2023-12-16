@@ -15,13 +15,13 @@ const Home = () => {
       <div>
 
      
-       <h1 className="text-4xl mb-4 font-bold text-center font-serif text-custom-primary animate__animated animate__rollIn">
+       <h1 className="text-4xl mb-4 font-bold text-center font-serif text-custom-primary animate__animated animate__fadeInDown">
       Hi, I am Alex Victor.
     </h1>
-    <ul  className="text-2xl mb-4  text-center font-Dancing Script  animate__animated animate__backInDown">
-      <li className="animate__animated animate__backInDown">Full Stack Developer</li>
+    <ul  className="text-2xl mb-4  text-center font-Dancing Script  ">
+      <li className="animate__animated animate__fadeInUp">Full Stack Developer</li>
      
-      <li  className="animate__animated animate__backInUp">Front-End & Back-End</li>
+      <li  className="animate__animated animate__fadeInUp">Front-End & Back-End</li>
      
      
       
