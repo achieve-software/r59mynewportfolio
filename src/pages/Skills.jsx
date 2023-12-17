@@ -24,7 +24,7 @@ const Skills = () => {
   const currentYear = new Date().getFullYear();
   return (
     <div
-      style={{ backgroundImage: `url('./images/9.jpg')` }}
+      style={{ backgroundImage: `url('./images/background.jpg')` }}
       className="w-full bg-cover bg-center  h-screen bg-gray-200 text-gray-800 p-10 "
     >
       <div className="container flex justify-evenly  ">
@@ -145,7 +145,7 @@ const Skills = () => {
         </div>
         <div>
           <img
-            src="./images/S.png"
+            src="./images/c.png"
             alt="DDD"
             className="w-96 h-auto  animate__animated animate__fadeInDown shadow-xl border border-slate-950"
           />
@@ -234,6 +234,9 @@ const Skills = () => {
           </div>
         </div>
       </div>
+      <p className="text-sm mt-40 font-black">
+      achieve-software &copy; {currentYear} <hr />
+      </p>
     </div>
   );
 };
