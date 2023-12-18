@@ -16,7 +16,7 @@ const Home = () => {
 
      
        <h1 className="text-4xl mb-4 font-bold text-center font-serif text-custom-primary animate__animated animate__fadeInDown">
-      Hi, I am Alex Victor.
+      Hi, I am Aykut Taş.
     </h1>
     <ul  className="text-2xl mb-4  text-center font-Dancing Script  ">
       <li className="animate__animated animate__fadeInUp">Full Stack Developer</li>
