@@ -4,6 +4,7 @@ import React from "react";
 import Soci from "../components/Soci";
 import TableCard from "../components/TableCard";
 import Button from "../components/Button";
+import Type from "../components/Type";
 
 const Home = () => {
   const currentYear = new Date().getFullYear();
@@ -14,10 +15,11 @@ const Home = () => {
     >
       <div>
 
-     
        <h1 className="text-4xl mb-4 font-bold text-center font-serif text-custom-primary animate__animated animate__fadeInDown">
       Hi, I am Aykut Taş.
     </h1>
+  
+
     <ul  className="text-2xl mb-4  text-center font-Dancing Script  ">
       <li className="animate__animated animate__fadeInUp">Full Stack Developer</li>
      
@@ -26,12 +28,13 @@ const Home = () => {
      
       
     </ul>
+    <Type/>
     </div>
       <Soci />
       <Button/>
       <TableCard />
     
-       
+    
 <br />
       <p className="text-sm mt-40 font-black">
       achieve-software &copy; {currentYear} <hr />
