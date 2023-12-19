@@ -10,7 +10,7 @@ const Home = () => {
   const currentYear = new Date().getFullYear();
   return (
     <div
-      style={{ backgroundImage: `url('./images/9.jpg')` }}
+      style={{ backgroundImage: `url('./images/background.jpg')` }}
       className="w-full bg-cover bg-center flex flex-col items-center justify-center h-screen bg-gray-200 text-gray-800 p-10 "
     >
       <div>
