@@ -235,8 +235,8 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <p className="text-sm mt-40 font-black">
-      achieve-software &copy; {currentYear} <hr />
+      <p className="text-sm mt-40 font-black underline">
+      achieve-software &copy; {currentYear}  
       </p>
     </div>
   );

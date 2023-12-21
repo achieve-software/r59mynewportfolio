@@ -3,6 +3,8 @@ import "./Soci.scss";
 
 const Soci = () => {
   return (
+ 
+    
     <ul className="social">
       <li className="social-item">
         <a className="social-link" href="/">
@@ -100,6 +102,7 @@ const Soci = () => {
         </a>
       </li>
     </ul>
+  
   );
 };
 
