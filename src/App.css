@@ -57,7 +57,7 @@ main .content {
   background-color: #666;
   left: 0;
 }/* PRODUCTS ////////////////////////////////////////////////////////////// */.products-row .card .card-body {
-  background: #212529
+  background:#080F36
 ;
 }.products-row .col-lg-4 {
   margin-bottom: 20px;
@@ -71,6 +71,8 @@ main .content {
 }.card .card-title {
   margin-bottom: 15px;
   text-align: center;
+  color: white;
+  font-weight: bold;
 }.card .img-wrap {
   height: 300px;
   text-align: center;
