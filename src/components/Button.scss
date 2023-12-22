@@ -4,13 +4,13 @@ $background-color_1: #000;
 $background-color_2: red;
 
 .button1 {
-	padding: 10px 30px;
+	padding: 5px 15px;
 	background-color: $background-color_1;
 	border: none;
 	font-size: 18px;
 	position: relative;
 	transition: 500ms;
-	margin-bottom: 60px;
+	margin-bottom: 30px;
 	cursor: pointer;
 	span {
 		color: $color_1;

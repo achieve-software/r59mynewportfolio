@@ -9,38 +9,33 @@ import Type from "../components/Type";
 const Home = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <div
-      style={{ backgroundImage: `url('./images/background.jpg')` }}
-      className="w-full bg-cover bg-center flex flex-col items-center justify-center h-screen bg-gray-200 text-gray-800 p-10 "
-    >
-      <div>
+    <div className="w-full   flex flex-col items-center justify-center mt-10 ">
 
-       <h1 className="text-4xl mb-4 font-bold text-center font-serif text-custom-primary animate__animated animate__fadeInDown">
-      Hi, I am Aykut Taş.
-    </h1>
-  
+      <ul className="text-2xl  text-center font-Dancing Script  ">
+        <li className="  font-bold text-center font-serif  animate__animated animate__fadeInDown">
+        Hi, I am Aykut Taş.
+        </li>
+        <li className="text-xl animate__animated animate__fadeInUp">
+          Full Stack Developer
+        </li>
 
-    <ul  className="text-2xl mb-4  text-center font-Dancing Script  ">
-      <li className="animate__animated animate__fadeInUp">Full Stack Developer</li>
-     
-      <li  className="animate__animated animate__fadeInUp">Front-End & Back-End</li>
-     
-     
-      
-    </ul>
-    <Type/>
-    </div>
+        <li className="text-xl animate__animated animate__fadeInUp">
+          Front-End & Back-End
+        </li>
+      </ul>
+      <Type />
+
       <Soci />
-      <Button/>
+      <br />
+
       <TableCard />
-    
-    
-<br />
-      <p className="text-sm mt-40 font-black underline">
-      achieve-software &copy; {currentYear} <hr />
+      <br />
+      <br />
+      <Button />
+
+      <p className="text-sm font-black underline">
+        achieve-software &copy; {currentYear}
       </p>
-      
-      
     </div>
   );
 };

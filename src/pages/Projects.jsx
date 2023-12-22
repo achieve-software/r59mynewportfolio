@@ -7,14 +7,7 @@ const Projects = () => {
   return (
     <main> 
       <div className="pg-header">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-7">
-              <h1>My Projects</h1>
-            </div>
-             
-          </div>
-        </div>
+      <h1>My Projects</h1>
       </div>
 
 
@@ -38,7 +31,7 @@ const Projects = () => {
                       {projects.details}
                     </p>
                     <div className="d-flex justify-content-between align-items-center">
-                      <span>Price: <strong className="price"> {projects.price}</strong></span>
+                      <span className="spa">Price: <strong className="price"> {projects.price}</strong></span>
                       <Link to={`/projects/${projects.id}`} className="btn btn-primary btn-sm" >Detail</Link>
                     </div>
                   </div>

@@ -11,7 +11,7 @@ const Navbar = () => {
   
 
   return (
-    <div className="flex h-screen  bg-gray-100">
+    <div className="flex h-screen  ">
       {/* Hamburger Menü Butonu */}
       <button
         className="sm:hidden fixed top-4 left-4 p-2 bg-blue-500 text-white rounded"
@@ -22,21 +22,22 @@ const Navbar = () => {
 
       {/* Sidebar */}
       <div
-        className={`bg-indigo-300 p-4 w-64 ${
+       style={{ backgroundImage: `url('./images/background.jpg')` }}
+        className={`bg-indigo-300 p-4  ${
           isOpen ? "block" : "hidden"
         } sm:block `}
       >
-        <div className="flex items-center justify-center mb-24">
+        <div className="flex items-center justify-center mb-10">
           <img
-            className="rounded-full border-2 border-white mt-4 w-48 h-48"
+            className="rounded-full border-2 border-white w-40 h-40"
             src="./images/dg.png" // Profil fotoğrafınızın URL'sini ekleyin
             alt="Profil"
           />
         </div>
-        <nav className="sm:block flex items-center justify-center">
+        <nav className="sm:block flex items-center justify-center ">
           <ul
-            style={{ backgroundImage: `url('./images/az.png')` }}
-            className="rounded-lg p-4  "
+            style={{ backgroundImage: `url('./images/az.png')`, paddingTop:"1px" }}
+            className="rounded-lg  "
           >
             <li className="m-10 ">
               <NavLink 

@@ -25,7 +25,7 @@ const Skills = () => {
   return (
     <div
        
-      className="w-full bg-cover bg-center  h-screen  text-gray-800 p-10 "
+      className="w-full bg-cover bg-center  h-screen  text-gray-800 p-10  "
      
     >
       <div className="container flex justify-evenly  ">
@@ -234,10 +234,9 @@ const Skills = () => {
             </div>
           </div>
         </div>
+        
       </div>
-      <p className="text-sm mt-40 font-black underline">
-      achieve-software &copy; {currentYear}  
-      </p>
+    
     </div>
   );
 };
