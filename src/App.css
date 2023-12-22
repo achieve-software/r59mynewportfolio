@@ -57,7 +57,7 @@ main .content {
   background-color: #666;
   left: 0;
 }/* PRODUCTS ////////////////////////////////////////////////////////////// */.products-row .card .card-body {
-  background:#080F36
+  background:#070681
 ;
 }.products-row .col-lg-4 {
   margin-bottom: 20px;
@@ -87,8 +87,8 @@ main .content {
   margin: 0 auto;
   object-fit: cover;
 }.card .price {
-  color: #0D6EFD
-;
+  color: #EA838D;
+  font-weight: bold;
 }.card .btn-primary {
   font-weight: 600;
 }/* SINGLE PRODUCT ////////////////////////////////////////////////////////////// */.single h2 {
@@ -112,11 +112,7 @@ main .content {
 }.single .price strong {
   color: #0A58CA
 ;
-}
-.spa{
-  color: #EA838D;
-  font-weight: bold;
-}/* POSTS ////////////////////////////////////////////////////////////// */.posts .col-sm-6 {
+} /* POSTS ////////////////////////////////////////////////////////////// */.posts .col-sm-6 {
   margin-bottom: 20px;
 }.posts .card-title {
   text-transform: capitalize;
