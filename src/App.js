@@ -1,12 +1,12 @@
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
+import './App.css';
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Skills from "./pages/Skills";
 import Navbar from "./components/Navbar";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="App flex">

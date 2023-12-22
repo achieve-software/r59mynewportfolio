@@ -1,10 +1,55 @@
-import React from 'react'
+import React from "react";
+import {Link} from "react-router-dom";
+import PROJECTS from "./../data";
 
 const Projects = () => {
+   
   return (
-    <div  style={{ backgroundImage: `url('./images/background.jpg')` }}
-    className="w-full bg-cover bg-center  h-screen bg-gray-200 text-gray-800 p-10 ">Projects</div>
-  )
-}
+    <main> 
+      <div className="pg-header">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-7">
+              <h1>My Projects</h1>
+            </div>
+             
+          </div>
+        </div>
+      </div>
 
-export default Projects
+
+
+      <div className="container content">
+        <div className="row products-row">
+          {PROJECTS.map((projects) => {
+            return (
+              <div className="col-lg-4" key={projects.id}>
+                <div className="card">
+                <div className="img-wrap"  type="button"
+                 >
+                  
+                    <img src={projects.image} alt="" />
+                  </div>
+                  <div className="card-body">
+                    <h5 className="card-title">
+                      {projects.name}
+                    </h5>
+                    <p className="card-text">
+                      {projects.details}
+                    </p>
+                    <div className="d-flex justify-content-between align-items-center">
+                      <span>Price: <strong className="price"> {projects.price}</strong></span>
+                      <Link to={`/projects/${projects.id}`} className="btn btn-primary btn-sm" >Detail</Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </main>
+  );
+};
+
+export default Projects;

@@ -24,8 +24,8 @@ const Skills = () => {
   const currentYear = new Date().getFullYear();
   return (
     <div
-      style={{ backgroundImage: `url('./images/background.jpg')` }}
-      className="w-full bg-cover bg-center  h-screen bg-gray-200 text-gray-800 p-10 "
+       
+      className="w-full bg-cover bg-center  h-screen  text-gray-800 p-10 "
      
     >
       <div className="container flex justify-evenly  ">

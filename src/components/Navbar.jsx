@@ -1,12 +1,14 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+
   };
+  
 
   return (
     <div className="flex h-screen  bg-gray-100">
@@ -32,58 +34,61 @@ const Navbar = () => {
           />
         </div>
         <nav className="sm:block flex items-center justify-center">
-          <ul style={{ backgroundImage: `url('./images/12.jpg')` }} className="rounded-lg  ">
+          <ul
+            style={{ backgroundImage: `url('./images/az.png')` }}
+            className="rounded-lg p-4  "
+          >
             <li className="m-10 ">
-              <Link
+              <NavLink 
                 to="/"
-                className="text-white   font-black hover:text-black hover:bg-yellow-300 transition duration-300 ease-in-out "
+                className="text-gray-500  font-black hover:text-white   transition duration-300 ease-in-out  "
                
-                onClick={toggleMenu}
+                
               >
                 Home
-              </Link>{" "}
+              </NavLink>{" "}
               <hr />
             </li>
 
             <li className="m-10">
-              <Link
+              <NavLink
                 to="/skills"
-                className="text-white  font-black   hover:text-black hover:bg-yellow-300 transition duration-300 ease-in-out   "
+                className="text-gray-500 font-black     hover:text-white transition duration-300 ease-in-out  "
                 onClick={toggleMenu}
               >
                 Skills
-              </Link>{" "}
+              </NavLink>{" "}
               <hr />
             </li>
             <li className="m-10">
-              <Link
+              <NavLink
                 to="/projects"
-                className="text-white  font-black  hover:text-black hover:bg-yellow-300 transition duration-300 ease-in-out  "
+                className="text-gray-500 font-black    hover:text-white transition duration-300 ease-in-out  "
                 onClick={toggleMenu}
               >
                 Projects
-              </Link>{" "}
+              </NavLink>{" "}
               <hr />
             </li>
             <li className="m-10">
-              <Link
+              <NavLink
                 to="/about"
-                className="text-white  font-black  hover:text-black hover:bg-yellow-300 transition duration-300 ease-in-out  "
+                className="text-gray-500 font-black    hover:text-white transition duration-300 ease-in-out  "
                 onClick={toggleMenu}
               >
                 About
-              </Link>{" "}
+              </NavLink>{" "}
               <hr />
             </li>
 
             <li className="m-10">
-              <Link
+              <NavLink
                 to="/contact"
-                className="text-white  font-black  hover:text-black hover:bg-yellow-300 transition duration-300 ease-in-out   "
+                className="text-gray-500 font-black    hover:text-white transition duration-300 ease-in-out   "
                 onClick={toggleMenu}
               >
                 Contact
-              </Link>{" "}
+              </NavLink>{" "}
               <hr />
             </li>
             {/* Diğer sayfa linkleri buraya eklenebilir */}
