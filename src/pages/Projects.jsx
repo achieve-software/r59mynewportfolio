@@ -10,8 +10,8 @@ import { MdOutlineLiveTv } from "react-icons/md";
 const Projects = () => {
   const [search, setSearch] = useState("");
   return (
-    <main>
-      <div className="pg-header">
+    <main className="w-full">
+      <div className=" pg-header">
         <h1>My Projects</h1>
       </div>
 
@@ -19,10 +19,12 @@ const Projects = () => {
         placeholder="Search a project..."
         type="search"
         className="w-50 m-auto mt-4 "
-        style={{  borderTop: "none",
-        borderRight: "none",
-        borderBottom: "3px solid #FF4B45",
-        borderLeft: "none", }}
+        style={{
+          borderTop: "none",
+          borderRight: "none",
+          borderBottom: "3px solid #FF4B45",
+          borderLeft: "none",
+        }}
         onChange={(e) => setSearch(e.target.value)}
       />
 
@@ -34,15 +36,18 @@ const Projects = () => {
             return (
               <div className="col-lg-4" key={projects.id}>
                 <div className="card">
-                  <div className="img-wrap" type="button">
+                  <div className="img-wrap hover:scale-110 transition-transform duration-300" type="button">
                     <img
                       src={projects.image}
                       alt=""
                       onClick={() => window.open(projects.liveurl, "_blank")}
+                      
                     />
                   </div>
-                  <div className="card-body">
+                  <div className="card-body ">
+                    
                     <h5 className="card-title">{projects.name}</h5>
+
                     <p className="card-text">{projects.details}</p>
 
                     <div className="d-flex justify-content-between align-items-center">

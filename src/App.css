@@ -5,7 +5,7 @@ a {
 }/* MAIN ////////////////////////////////////////////////////////////// */
 main {
   
-  background-color: #fff;
+   
   margin: 1rem 1rem 1rem 1rem;
 
 }
@@ -68,6 +68,7 @@ main .content {
 }/* CARD ////////////////////////////////////////////////////////////// */.card {
   border-radius: 0;
   box-shadow: 0px 10px 10px #eee;
+ 
 }.card .card-title {
   margin-bottom: 15px;
   text-align: center;

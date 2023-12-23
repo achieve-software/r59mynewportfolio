@@ -1,104 +1,121 @@
 const PROJECTS = [
-    {
-        id: 1,
-        name: 'Movie App', 
-       
-        image: require('./images/1.gif'),
-        details:
-            'React / Axios / Firebase / Toastify / Tailwind-elements / Tailwind-Css',
-giturl:"https://github.com/achieve-software/r32movieapp",
-liveurl:"https://playful-cuchufli-213d17.netlify.app/",
+  {
+    id: 1,
+    name: "Movie App",
+    image: require("./images/1.gif"),
+    details:
+      "React / Axios / Firebase / Toastify / Tailwind-elements / Tailwind-Css",
+    giturl: "https://github.com/achieve-software/r32movieapp",
+    liveurl: "https://playful-cuchufli-213d17.netlify.app/",
+  },
 
+  {
+    id: 2,
+    name: "NBA Legends",
+    image: require("./images/2.gif"),
+    details:
+      "React / Bootstrap / React-Bootstrap / React-Dom / Basic React Usage   ",
+    giturl: "https://github.com/achieve-software/r11nba",
+    liveurl: "https://aesthetic-croquembouche-9e333e.netlify.app/",
+  },
+  {
+    id: 3,
+    name: "Guess The Number",
+    image: require("./images/3.gif"),
+    details: "JavaScript / Html / Css / JavaScript Dom Events / Algorithm ",
+    giturl: "https://github.com/achieve-software/3guessnumber",
+    liveurl: "https://serene-khapse-2e1043.netlify.app/",
+  },
+  {
+    id: 4,
+    name: "Checkout Project",
+    image: require("./images/4.gif"),
+    details: "JavaScript / Html / Css / JavaScript Dom Events / Algorithm ",
+    giturl: "https://github.com/achieve-software/40-Checkout-Project",
+    liveurl: "https://dashing-syrniki-41189d.netlify.app/",
+  },
+  {
+    id: 5,
+    name: "To-Do App",
+    image: require("./images/5.gif"),
+    details:
+      "JavaScript / Html / Css / JavaScript Dom Events / Algorithm / localStorage  ",
+    giturl: "https://github.com/achieve-software/39-Todo-App",
+    liveurl: "https://subtle-lamington-763dfe.netlify.app/",
+  },
+  {
+    id: 6,
+    name: "Tutorial App",
+    image: require("./images/6.gif"),
+    details:
+      "React / Bootstrap / React-Bootstrap / Axios / React İcons / Lifecycle Methods",
+    giturl: "https://github.com/achieve-software/r12-tutorial-app",
+    liveurl: "https://unique-mooncake-15ad09.netlify.app/",
+  },
+  {
+    id: 7,
+    name: "Contact App",
+    image: require("./images/7.gif"),
+    details: "React / Material UI / MUI İcons / Firebase / React-Toastify /",
+    giturl: "https://github.com/achieve-software/r14contactapp",
+    liveurl: "https://rainbow-praline-a0873b.netlify.app/",
+  },
+  {
+    id: 8,
+    name: "Redux intro",
+    image: require("./images/8.gif"),
+    details: "React / React-Redux / React-Dom / useDispatch, useSelector Hooks",
+    giturl: "https://github.com/achieve-software/r35redux-intro-starter",
+    liveurl: "https://preeminent-selkie-771f49.netlify.app/",
+  },
+  {
+    id: 9,
+    name: "React To-do App",
+    image: require("./images/9.gif"),
+    details: "React / React-Dom / Algorithm / Basic React Usage / Basic Css ",
+    giturl: "https://github.com/achieve-software/r17reacttodoapp",
+    liveurl: "https://voluble-semifreddo-38e869.netlify.app/",
+  },
+  {
+    id: 10,
+    name: "React Shop Design",
+    image: require("./images/10.gif"),
+    details: "React / Bootstrap /  React-Bootstrap / React-Router-Dom ",
+    giturl: "https://github.com/achieve-software/r20shopdesign",
+    liveurl: "https://sage-bavarois-488d49.netlify.app/",
+  },
+  {
+    id: 11,
+    name: "Huddle Project",
+    image: require("./images/11.gif"),
+    details: "React / Styled-Components /  React-İcons / React-Router-Dom ",
+    giturl: "https://github.com/achieve-software/r24huddleprojct",
+    liveurl: "https://fanciful-medovik-bc2037.netlify.app/",
+  },
+  {
+    id: 12,
+    name: "Hex color",
+    image: require("./images/12.gif"),
+    details: "React / React-Dom / Javascript / Basic React Usage / Algorithm",
+    giturl: "https://github.com/achieve-software/r27hexcolor",
+    liveurl: "https://frolicking-syrniki-97eade.netlify.app/",
+  },
+  {
+    id: 13,
+    name: "Library",
+    image: require("./images/13.gif"),
+    details: "React / Styled-Components / Axios /  React-Router-Dom  /",
+    giturl: "https://github.com/achieve-software/r28clarus-library-starter",
+    liveurl: "https://dapper-baklava-dd51ba.netlify.app/",
+  },
 
-    },
-
-    {
-        id: 2,
-        name: 'Apple iPhone 128GB',
-       
-        image: require('./images/2.gif'),
-        details:
-        'React / Axios / Firebase / Toastify / Tailwind-elements / Tailwind-Css',
-    },
-    {
-        id: 3,
-        name: 'Running Shoe Red & White',
-        frontback: '$13.67',
-        image: require('./images/3.gif'),
-        details:
-            'Quos, non, esse eligendi ab accusantium voluptatem. Accusamus perspiciatis asperiores labore esse ab accusantium ea modi ut.',
-    },
-    {
-        id: 4,
-        name: 'Clarusway Library', 
-        frontback: "FRONTEND/REACT",
-        image: require('./images/4.gif'),
-        details:
-            'Html-Css',
-    },
-    {
-        id: 5,
-        name: 'Apple iPhone 128GB',
-        frontback:  "FRONTEND/HTML-CSS",
-        image: require('./images/5.gif'),
-        details:
-            'Quos, non, esse eligendi ab accusantium voluptatem. Accusamus perspiciatis asperiores labore esse ab accusantium ea modi ut.',
-    },
-    {
-        id: 6,
-        name: 'Running Shoe Red & White',
-        frontback: '$13.67',
-        image: require('./images/6.gif'),
-        details:
-            'Quos, non, esse eligendi ab accusantium voluptatem. Accusamus perspiciatis asperiores labore esse ab accusantium ea modi ut.',
-    },
-    {
-        id: 7,
-        name: 'Clarusway Library', 
-        frontback: "FRONTEND/REACT",
-        image: require('./images/7.gif'),
-        details:
-            'Html-Css',
-    },
-    {
-        id: 8,
-        name: 'Apple iPhone 128GB',
-        frontback:  "FRONTEND/HTML-CSS",
-        image: require('./images/8.gif'),
-        details:
-            'Quos, non, esse eligendi ab accusantium voluptatem. Accusamus perspiciatis asperiores labore esse ab accusantium ea modi ut.',
-    },
-    {
-        id: 9,
-        name: 'Running Shoe Red & White',
-        frontback: '$13.67',
-        image: require('./images/9.gif'),
-        details:
-            'Quos, non, esse eligendi ab accusantium voluptatem. Accusamus perspiciatis asperiores labore esse ab accusantium ea modi ut.',
-    },
-    {
-        id: 10,
-        name: 'Clarusway Library', 
-        frontback: "FRONTEND/REACT",
-        image: require('./images/10.gif'),
-        details:
-            'Html-Css',
-    },
-    {
-        id: 11,
-        name: 'Apple iPhone 128GB',
-        frontback:  "FRONTEND/HTML-CSS",
-        image: require('./images/11.gif'),
-        details:
-            'Quos, non, esse eligendi ab accusantium voluptatem. Accusamus perspiciatis asperiores labore esse ab accusantium ea modi ut.',
-    },
-    {
-        id: 12,
-        name: 'Running Shoe Red & White',
-        frontback: '$13.67',
-        image: require('./images/12.gif'),
-        details:
-            'Quos, non, esse eligendi ab accusantium voluptatem. Accusamus perspiciatis asperiores labore esse ab accusantium ea modi ut.',
-    },
+  {
+    id: 14,
+    name: "Google Landing Page",
+    image: require("./images/14.gif"),
+    details: "Started Html / Css / Basic-Html Usage/ Basic Css Usage",
+    giturl: "https://github.com/achieve-software/2googleLand",
+    liveurl: "https://stately-boba-9ac91e.netlify.app/",
+  },
 ];
 export default PROJECTS;

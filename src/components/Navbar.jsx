@@ -6,9 +6,7 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-
   };
-  
 
   return (
     <div className="flex h-screen  ">
@@ -22,7 +20,11 @@ const Navbar = () => {
 
       {/* Sidebar */}
       <div
-       style={{ backgroundImage: `url('./images/background.jpg')` }}
+        style={{
+          backgroundImage: `url('./images/background.jpg')`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}
         className={`bg-indigo-300 p-4  ${
           isOpen ? "block" : "hidden"
         } sm:block `}
@@ -36,15 +38,16 @@ const Navbar = () => {
         </div>
         <nav className="sm:block flex items-center justify-center ">
           <ul
-            style={{ backgroundImage: `url('./images/az.png')`, paddingTop:"1px" }}
+            style={{
+              backgroundImage: `url('./images/az.png')`,
+              paddingTop: "1px",
+            }}
             className="rounded-lg  "
           >
             <li className="m-10 ">
-              <NavLink 
+              <NavLink
                 to="/"
-                className="text-gray-500  font-black hover:text-white   transition duration-300 ease-in-out  "
-               
-                
+                className="text-gray-500  font-black hover:text-black   transition duration-300 ease-in-out  "
               >
                 Home
               </NavLink>{" "}
@@ -54,7 +57,7 @@ const Navbar = () => {
             <li className="m-10">
               <NavLink
                 to="/skills"
-                className="text-gray-500 font-black     hover:text-white transition duration-300 ease-in-out  "
+                className="text-gray-500 font-black     hover:text-black transition duration-300 ease-in-out  "
                 onClick={toggleMenu}
               >
                 Skills
@@ -64,7 +67,7 @@ const Navbar = () => {
             <li className="m-10">
               <NavLink
                 to="/projects"
-                className="text-gray-500 font-black    hover:text-white transition duration-300 ease-in-out  "
+                className="text-gray-500 font-black    hover:text-black transition duration-300 ease-in-out  "
                 onClick={toggleMenu}
               >
                 Projects
@@ -74,7 +77,7 @@ const Navbar = () => {
             <li className="m-10">
               <NavLink
                 to="/about"
-                className="text-gray-500 font-black    hover:text-white transition duration-300 ease-in-out  "
+                className="text-gray-500 font-black    hover:text-black transition duration-300 ease-in-out  "
                 onClick={toggleMenu}
               >
                 About
@@ -85,7 +88,7 @@ const Navbar = () => {
             <li className="m-10">
               <NavLink
                 to="/contact"
-                className="text-gray-500 font-black    hover:text-white transition duration-300 ease-in-out   "
+                className="text-gray-500 font-black    hover:text-black transition duration-300 ease-in-out   "
                 onClick={toggleMenu}
               >
                 Contact
