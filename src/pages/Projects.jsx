@@ -5,10 +5,14 @@ import Form from "react-bootstrap/Form";
 import { IoLogoGithub } from "react-icons/io5";
 import { FaInternetExplorer } from "react-icons/fa6";
 
-import { MdOutlineLiveTv } from "react-icons/md";
 
 const Projects = () => {
   const [search, setSearch] = useState("");
+  const filteredProjects = PROJECTS.filter((projects) =>
+            projects.name.toLowerCase().includes(search.toLowerCase())  ||
+            projects.details.toLowerCase().includes(search.toLowerCase()) 
+          );
+          
   return (
     <main className="w-full">
       <div className=" pg-header">
@@ -24,15 +28,15 @@ const Projects = () => {
           borderRight: "none",
           borderBottom: "3px solid #FF4B45",
           borderLeft: "none",
+          
         }}
         onChange={(e) => setSearch(e.target.value)}
       />
 
       <div className="container content">
         <div className="row products-row">
-          {PROJECTS.filter((projects) =>
-            projects.name.toLowerCase().includes(search.trim().toLowerCase())
-          ).map((projects) => {
+          {
+          filteredProjects.map((projects) => {
             return (
                
               <div className="col-lg-4" key={projects.id}>
