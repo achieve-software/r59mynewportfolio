@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, {  useState } from "react";
 import PROJECTS from "./../data";
 import Form from "react-bootstrap/Form";
 import { IoLogoGithub } from "react-icons/io5";
@@ -8,10 +7,33 @@ import { FaInternetExplorer } from "react-icons/fa6";
 
 const Projects = () => {
   const [search, setSearch] = useState("");
+  
   const filteredProjects = PROJECTS.filter((projects) =>
             projects.name.toLowerCase().includes(search.toLowerCase())  ||
             projects.details.toLowerCase().includes(search.toLowerCase()) 
           );
+          const handleSearchChange = (e) => {
+            setSearch(e.target.value);
+             
+          };
+          const highlightedText = (text, highlight) => {
+            const parts = text.split(new RegExp(`(${highlight})`, 'gi'));
+            return (
+              <span>
+                {parts.map((part, i) => (
+                  <span
+                    key={i}
+                    style={{
+                      color: part.toLowerCase() === highlight.toLowerCase() ? "#FF0000" : "inherit",
+                    }}
+                  >
+                    {part}
+                  </span>
+                ))}
+              </span>
+            );
+          };
+        
           
   return (
     <main className="w-full">
@@ -20,7 +42,7 @@ const Projects = () => {
       </div>
 
       <Form.Control
-        placeholder="Search a project..."
+         placeholder="Search a project..."
         type="search"
         className="w-50 m-auto mt-4 "
         style={{
@@ -30,17 +52,20 @@ const Projects = () => {
           borderLeft: "none",
           
         }}
-        onChange={(e) => setSearch(e.target.value)}
+        onChange={handleSearchChange}
+        
+        
       />
 
       <div className="container content">
         <div className="row products-row">
+          
           {
           filteredProjects.map((projects) => {
             return (
                
               <div className="col-lg-4" key={projects.id}>
-                <div className="card">
+                <div className= "card" key={projects.id}>
                 <h1 className="idin">{projects.id}</h1>
                   <div className="img-wrap hover:scale-105 transition-transform duration-300" type="button">
                     
@@ -53,10 +78,8 @@ const Projects = () => {
                   </div>
                   <div className="card-body ">
                     
-                    <h5 className="card-title">{projects.name}</h5>
-
-                    <p className="card-text">{projects.details}</p>
-
+                  <h5 className="card-title">{highlightedText(projects.name, search)}</h5>
+                  <p className="card-text">{highlightedText(projects.details, search)}</p>
                     <div className="d-flex justify-content-between align-items-center">
                       <IoLogoGithub
                         size={44}
