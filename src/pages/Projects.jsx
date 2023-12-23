@@ -34,9 +34,12 @@ const Projects = () => {
             projects.name.toLowerCase().includes(search.trim().toLowerCase())
           ).map((projects) => {
             return (
+               
               <div className="col-lg-4" key={projects.id}>
                 <div className="card">
-                  <div className="img-wrap hover:scale-110 transition-transform duration-300" type="button">
+                <h1 className="idin">{projects.id}</h1>
+                  <div className="img-wrap hover:scale-105 transition-transform duration-300" type="button">
+                    
                     <img
                       src={projects.image}
                       alt=""

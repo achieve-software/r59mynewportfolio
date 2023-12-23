@@ -10,6 +10,7 @@ const Home = () => {
   const currentYear = new Date().getFullYear();
   return (
     <div className="w-full   flex flex-col items-center justify-center mt-10 ">
+        <Button />
 
       <ul className="text-2xl  text-center font-Dancing Script  ">
         <li className="  font-bold text-center font-serif  animate__animated animate__fadeInDown">
@@ -31,7 +32,7 @@ const Home = () => {
       <TableCard />
       <br />
       <br />
-      <Button />
+    
 
       <p className="text-sm font-black underline">
         achieve-software &copy; {currentYear}

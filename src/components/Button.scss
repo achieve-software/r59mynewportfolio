@@ -4,7 +4,7 @@ $background-color_1: #000;
 $background-color_2: red;
 
 .button1 {
-	padding: 5px 15px;
+	padding: 20px 90px;
 	background-color: $background-color_1;
 	border: none;
 	font-size: 18px;
@@ -17,7 +17,7 @@ $background-color_2: red;
 		position: relative;
 		transition: 500ms;
 		transition-delay: 500ms;
-		font-size: 16px;
+		font-size: 24px;
 		text-transform: uppercase;
 		letter-spacing: 2px;
 		font-weight: 600;
