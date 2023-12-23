@@ -43,7 +43,7 @@ const Skills = () => {
             <div className="fr1 mt-10">
               <div className="flex items-center mt-4">
                 <AiFillHtml5
-                  size={36}
+                  size={24}
                   style={{ color: "#E34F26" }}
                   className="mr-2  "
                 />
@@ -59,7 +59,7 @@ const Skills = () => {
               </div>
               <div className="flex items-center mt-4  ">
                 <BsBootstrapFill
-                  size={36}
+                  size={24}
                   style={{ color: "#8E13FD" }}
                   className="mr-2"
                 />
@@ -67,51 +67,15 @@ const Skills = () => {
               </div>
               <div className="flex items-center mt-4">
                 <FaSass
-                  size={36}
+                  size={24}
                   style={{ color: "#FF00FF" }}
                   className="mr-2"
                 />
                 <span  className="mr-2 text-xl   ">Sass</span>
               </div>
-            </div>
-            <div className="fr2 mt-10">
-              <div className="flex items-center mt-4  ">
-                <SiJquery
-                  size={36}
-                  style={{ color: "#0865A6" }}
-                  className="mr-2"
-                />
-                <span  className="mr-2 text-xl   ">Jquery</span>
-              </div>
-              <div className="flex items-center mt-4  ">
-                <SiTypescript
-                  size={36}
-                  style={{ color: "#2D79C7" }}
-                  className="mr-2"
-                />
-                <span  className="mr-2 text-xl   ">TypeScript</span>
-              </div>
-              <div className="flex items-center mt-4  ">
-                <FaReact
-                  size={36}
-                  style={{ color: "#00FFFF" }}
-                  className="mr-2"
-                />
-                <span  className="mr-2 text-xl   ">React</span>
-              </div>
-              <div className="flex items-center mt-4  ">
-                <SiStyledcomponents
-                  size={36}
-                  style={{ color: "#E7927B" }}
-                  className="mr-2"
-                />
-                <span  className="mr-2 text-xl   ">Styled-Components</span>
-              </div>
-            </div>
-            <div className="fr3 mt-10">
               <div className="flex items-center mt-4  ">
                 <SiMui
-                  size={36}
+                  size={24}
                   style={{ color: "#007FFF" }}
                   className="mr-2"
                 />
@@ -119,29 +83,66 @@ const Skills = () => {
               </div>
               <div className="flex items-center mt-4  ">
                 <SiAxios
-                  size={36}
+                  size={24}
                   style={{ color: "#000000" }}
                   className="mr-2"
                 />
                 <span  className="mr-2 text-xl   ">Axios</span>
               </div>
+            </div>
+            
+            <div className="fr2 mt-10">
+              <div className="flex items-center mt-4  ">
+                <SiJquery
+                  size={24}
+                  style={{ color: "#0865A6" }}
+                  className="mr-2"
+                />
+                <span  className="mr-2 text-xl   ">Jquery</span>
+              </div>
+              <div className="flex items-center mt-4  ">
+                <SiTypescript
+                  size={24}
+                  style={{ color: "#2D79C7" }}
+                  className="mr-2"
+                />
+                <span  className="mr-2 text-xl   ">TypeScript</span>
+              </div>
+              <div className="flex items-center mt-4  ">
+                <FaReact
+                  size={24}
+                  style={{ color: "#00FFFF" }}
+                  className="mr-2"
+                />
+                <span  className="mr-2 text-xl   ">React</span>
+              </div>
+                 
               <div className="flex items-center mt-4  ">
                 <SiTailwindcss
-                  size={36}
-                  style={{ color: "#36B7F0" }}
+                  size={24}
+                  style={{ color: "#24B7F0" }}
                   className="mr-2"
                 />
                 <span  className="mr-2 text-xl   ">Tailwind</span>
               </div>
               <div className="flex items-center mt-4  ">
                 <SiNextdotjs
-                  size={36}
+                  size={24}
                   style={{ color: "#000000" }}
                   className="mr-2"
                 />
                 <span  className="mr-2 text-xl   ">Next.Js</span>
               </div>
+              <div className="flex items-center mt-4  ">
+                <SiStyledcomponents
+                  size={24}
+                  style={{ color: "#E7927B" }}
+                  className="mr-2"
+                />
+                <span  className="mr-2 text-xl   ">Styled-Components</span>
+              </div>
             </div>
+            
           </div>
         </div>
         <div>
@@ -166,7 +167,7 @@ const Skills = () => {
               {" "}
               <div className="flex items-center mt-4">
                 <FaNode
-                  size={36}
+                  size={24}
                   style={{ color: "#68A063" }}
                   className="mr-2"
                 />
@@ -174,7 +175,7 @@ const Skills = () => {
               </div>
               <div className="flex items-center mt-4">
                 <SiExpress
-                  size={36}
+                  size={24}
                   style={{ color: "#E9BE0F" }}
                   className="mr-2"
                 />
@@ -182,7 +183,7 @@ const Skills = () => {
               </div>
               <div className="flex items-center mt-4">
                 <AiOutlineConsoleSql
-                  size={36}
+                  size={24}
                   style={{ color: "#D47131" }}
                   className="mr-2"
                 />
@@ -190,7 +191,7 @@ const Skills = () => {
               </div>
               <div className="flex items-center mt-4">
                 <DiSqllite
-                  size={36}
+                  size={24}
                   style={{ color: "#1F7C8B" }}
                   className="mr-2"
                 />
@@ -201,7 +202,7 @@ const Skills = () => {
               {" "}
               <div className="flex items-center mt-4">
                 <SiPostgresql
-                  size={36}
+                  size={24}
                   style={{ color: "#305D8D" }}
                   className="mr-2"
                 />
@@ -209,7 +210,7 @@ const Skills = () => {
               </div>
               <div className="flex items-center mt-4">
                 <SiMysql
-                  size={36}
+                  size={24}
                   style={{ color: "#E58E01" }}
                   className="mr-2"
                 />
@@ -217,7 +218,7 @@ const Skills = () => {
               </div>
               <div className="flex items-center mt-4">
                 <SiMongodb
-                  size={36}
+                  size={24}
                   style={{ color: "#4DA53F" }}
                   className="mr-2"
                 />
@@ -225,7 +226,7 @@ const Skills = () => {
               </div>
               <div className="flex items-center mt-4">
                 <DiDjango
-                  size={36}
+                  size={24}
                   style={{ color: "#003A2B" }}
                   className="mr-2"
                 />
