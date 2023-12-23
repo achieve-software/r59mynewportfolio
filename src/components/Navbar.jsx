@@ -21,11 +21,9 @@ const Navbar = () => {
       {/* Sidebar */}
       <div
         style={{
-          backgroundImage: `url('./images/background.jpg')`,
-          backgroundPosition: "center",
-          backgroundSize: "cover",
+          
         }}
-        className={`bg-indigo-300 p-4  ${
+        className={`p-4  ${
           isOpen ? "block" : "hidden"
         } sm:block `}
       >
@@ -39,8 +37,9 @@ const Navbar = () => {
         <nav className="sm:block flex items-center justify-center ">
           <ul
             style={{
-              backgroundImage: `url('./images/az.png')`,
+              backgroundImage: `url('./images/nj.png')`,
               paddingTop: "1px",
+              height:"70vh"
             }}
             className="rounded-lg  "
           >
