@@ -29,7 +29,7 @@ const Navbar = () => {
       >
         <div className="flex items-center justify-center mb-10">
           <img
-            className="rounded-full border-2 border-white w-40 h-40"
+            className="rounded-full border-2 border-white w-48 h-48"
             src="./images/dg.png" // Profil fotoğrafınızın URL'sini ekleyin
             alt="Profil"
           />
