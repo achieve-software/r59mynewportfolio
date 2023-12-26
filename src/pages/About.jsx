@@ -6,7 +6,7 @@ const About = () => {
     <div className="w-full">
       <div className="flex items-center justify-center mt-5">
         <img
-          className="rounded-full border-2 border-yellow-500 w-48 h-48"
+          className="rounded-full border-2 border-zinc-600 shadow-lg w-48 h-48"
           src="./images/tt.jpg" // Profil fotoğrafınızın URL'sini ekleyin
           alt="Profil"
         />
