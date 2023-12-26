@@ -6,6 +6,7 @@ import { FaInternetExplorer } from "react-icons/fa6";
 
 
 const Projects = () => {
+  const currentYear = new Date().getFullYear();
   const [search, setSearch] = useState("");
   
   const filteredProjects = PROJECTS.filter((projects) =>
@@ -121,6 +122,9 @@ const Projects = () => {
           })}
         </div>
       </div>
+      <p className="text-center text-sm font-black underline pb-4">
+        achieve-software &copy; {currentYear}
+      </p>
     </main>
   );
 };

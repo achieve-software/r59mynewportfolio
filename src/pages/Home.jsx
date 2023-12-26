@@ -34,7 +34,7 @@ const Home = () => {
       <br />
     
 
-      <p className="text-sm font-black underline">
+      <p className="text-sm font-black underline mt-0">
         achieve-software &copy; {currentYear}
       </p>
     </div>
