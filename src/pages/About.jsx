@@ -14,7 +14,7 @@ const About = () => {
       <div className="mt-3 d-flex justify-content-center">
         <div className="col-sm-12 col-md-8 col-lg-6 col-xl-6">
           <div className="text-left">
-            <p>
+            <p  style={{ textIndent: '40px'}}>
               "Hello, I'm Aykut. I'm a passionate full stack developer focusing
               on both front-end and back-end domains. Working in the realm of
               software and coding isn't just a job for me; it's a passion and an
@@ -24,7 +24,7 @@ const About = () => {
             </p>
           </div>
           <div className="text-left">
-            <p>
+            <p style={{ textIndent: '40px'}}>
               If you want to delve deeper into the programming languages,
               frameworks, libraries, and packages I use in my projects, feel
               free to explore my 'Projects' page. While discovering my work and
