@@ -1,41 +1,42 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import PROJECTS from "./../data";
 import Form from "react-bootstrap/Form";
 import { IoLogoGithub } from "react-icons/io5";
 import { FaEdgeLegacy } from "react-icons/fa";
 
-
 const Projects = () => {
   const currentYear = new Date().getFullYear();
   const [search, setSearch] = useState("");
-  
-  const filteredProjects = PROJECTS.filter((projects) =>
-            projects.name.toLowerCase().includes(search.toLowerCase())  ||
-            projects.details.toLowerCase().includes(search.toLowerCase()) 
-          );
-          const handleSearchChange = (e) => {
-            setSearch(e.target.value);
-             
-          };
-          const highlightedText = (text, highlight) => {
-            const parts = text.split(new RegExp(`(${highlight})`, 'gi'));
-            return (
-              <span>
-                {parts.map((part, i) => (
-                  <span
-                    key={i}
-                    style={{
-                      color: part.toLowerCase() === highlight.toLowerCase() ? "#FF0000" : "inherit",
-                    }}
-                  >
-                    {part}
-                  </span>
-                ))}
-              </span>
-            );
-          };
-        
-          
+
+  const filteredProjects = PROJECTS.filter(
+    (projects) =>
+      projects.name.toLowerCase().includes(search.toLowerCase()) ||
+      projects.details.toLowerCase().includes(search.toLowerCase())
+  );
+  const handleSearchChange = (e) => {
+    setSearch(e.target.value);
+  };
+  const highlightedText = (text, highlight) => {
+    const parts = text.split(new RegExp(`(${highlight})`, "gi"));
+    return (
+      <span>
+        {parts.map((part, i) => (
+          <span
+            key={i}
+            style={{
+              color:
+                part.toLowerCase() === highlight.toLowerCase()
+                  ? "#FF0000"
+                  : "inherit",
+            }}
+          >
+            {part}
+          </span>
+        ))}
+      </span>
+    );
+  };
+
   return (
     <main className="w-full">
       <div className=" pg-header">
@@ -43,7 +44,7 @@ const Projects = () => {
       </div>
 
       <Form.Control
-         placeholder="Search a project programming language framework library or package..."
+        placeholder="Search a project programming language framework library or package..."
         type="search"
         className="w-50 m-auto mt-4 "
         style={{
@@ -51,36 +52,34 @@ const Projects = () => {
           borderRight: "none",
           borderBottom: "3px solid #FF4B45",
           borderLeft: "none",
-          
         }}
         onChange={handleSearchChange}
-        
-        
       />
 
       <div className="container content">
         <div className="row products-row">
-          
-          {
-          filteredProjects.map((projects) => {
+          {filteredProjects.map((projects) => {
             return (
-               
               <div className="col-lg-4" key={projects.id}>
-                <div className= "card" key={projects.id}>
-                <h1 className="idin">{projects.id}</h1>
-                  <div className="img-wrap hover:scale-105 transition-transform duration-300" type="button">
-                    
+                <div className="card" key={projects.id}>
+                  <h1 className="idin">{projects.id}</h1>
+                  <div
+                    className="img-wrap hover:scale-105 transition-transform duration-300"
+                    type="button"
+                  >
                     <img
                       src={projects.image}
                       alt=""
                       onClick={() => window.open(projects.liveurl, "_blank")}
-                      
                     />
                   </div>
                   <div className="card-body ">
-                    
-                  <h5 className="card-title">{highlightedText(projects.name, search)}</h5>
-                  <p className="card-text">{highlightedText(projects.details, search)}</p>
+                    <h5 className="card-title">
+                      {highlightedText(projects.name, search)}
+                    </h5>
+                    <p className="card-text">
+                      {highlightedText(projects.details, search)}
+                    </p>
                     <div className="d-flex justify-content-between align-items-center">
                       <IoLogoGithub
                         size={44}
