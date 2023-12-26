@@ -15,7 +15,7 @@ const About = () => {
         <div className="col-sm-12 col-md-8 col-lg-6 col-xl-6">
           <div className="text-left">
             <p  style={{ textIndent: '40px'}}>
-              "Hello, I'm Aykut. I'm a passionate full stack developer focusing
+              "Hello, I'm Akif. I'm a passionate full stack developer focusing
               on both front-end and back-end domains. Working in the realm of
               software and coding isn't just a job for me; it's a passion and an
               area of keen interest. Keeping abreast of technological
