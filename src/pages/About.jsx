@@ -20,12 +20,12 @@ const About = () => {
               software and coding isn't just a job for me; it's a passion and an
               area of keen interest. Keeping abreast of technological
               advancements and continually enhancing my skills is essential to
-              me.
+              me.""
             </p>
           </div>
           <div className="text-left">
             <p style={{ textIndent: '40px'}}>
-              If you want to delve deeper into the programming languages,
+              "If you want to delve deeper into the programming languages,
               frameworks, libraries, and packages I use in my projects, feel
               free to explore my 'Projects' page. While discovering my work and
               projects, you'll get a closer look at my passion and dedication in
