@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Inter:wght@700&display=swap");
+
+ 
+
+.containeree {
+  display: flex;
+  width: 90vw;
+  /* display: flex;: .container öğesinin bir esnek kutu olarak davranmasını sağlar. Bu, öğeleri yatay veya dikey olarak hizalamak için kullanılabilir.
+width: 90vw;: .container öğesinin genişliğini görüntü alanının %90'ı olarak ayarlar. vw, viewport (görüntü alanı) genişliği birimi olarak kullanılır ve sayfanın görüntülenebilir bölgesinin %1'ine eşittir. Bu stil özelliği, .container öğesinin genişliğini, sayfanın görüntülenebilir bölgesine göre ölçeklendirir ve mobil cihazlarda diğer cihazlara göre daha küçük olduğu için, sayfanın farklı boyutlarda görüntülenmesine uygun bir şekilde ölçeklendirir. */
+}
+
+.panel {
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+
+  /* background-size: auto 100%;: Arka plan resminin boyutunu ayarlar, burada auto genişliği orijinal genişliğinde kalırken, yüksekliği %100 olarak ayarlanır.
+background-position: center;: Arka plan resminin pozisyonunu ortalar.
+background-repeat: no-repeat;: Arka plan resminin tekrarlanmamasını sağlar.
+height: 80vh;: .panel öğesinin yüksekliğini görüntü alanının %80'ine eşit olarak ayarlar.
+border-radius: 50px;: .panel öğesinin köşelerinin yuvarlanmasını sağlar. 50px değeri, köşelerin yuvarlaklığı için kullanılan piksel değeridir.
+cursor: pointer;: .panel öğesi üzerine geldiğinde, fare imlecinin bir el işaretçisine dönüşmesini sağlar.
+flex: 0.5;: .panel öğesinin, ebeveyn kutu içindeki esnek kutu düzenindeki genişlik oranını belirler. Bu değer, .panel öğesi ile diğer öğeler arasındaki genişlik oranını ayarlamak için kullanılabilir.
+margin: 10px;: .panel öğesinin dört kenarındaki kenar boşluğunu 10px olarak ayarlar.
+position: relative;: .panel öğesinin konumunu göreceli olarak ayarlar. Bu, .panel öğesinin, içinde bulunduğu ebeveyn kutusuna göre konumunu ayarlayabilmesini sağlar.
+transition: flex 0.7s ease-in;: .panel öğesinin esnek kutu özelliği ile ilgili animasyonu ayarlar. Bu animasyon, flex özelliğinin 0.7 saniyede geçiş yapmasını ve ease-in hareket eğrisi kullanarak yavaşça başlamasını sağlar. */
+}
+
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin: 0px;
+  opacity: 0;
+
+  /* font-size: 24px;: h3 öğesi için yazı tipi boyutunu 24px olarak ayarlar.
+position: absolute;: h3 öğesinin konumunu, içinde bulunduğu .panel öğesine göre mutlak bir pozisyonda belirler.
+bottom: 20px;: h3 öğesinin alt kenarının .panel öğesinin alt kenarından 20px yukarıda olmasını sağlar.
+left: 50%;: h3 öğesinin sol kenarının .panel öğesinin ortasında olmasını sağlar.
+margin: 0px;: h3 öğesinin dört kenarındaki kenar boşluğunu sıfırlar.
+opacity: 0;: h3 öğesinin görünürlüğünü sıfırlar, yani öğe sayfada görünmez olur. */
+}
+.panel.activee {
+  flex: 5;
+
+  /* Bu CSS kod bloğu, .panel öğesi için active sınıfı eklendiğinde stil özelliği ayarlar:
+
+flex: 5;: .panel öğesinin flex özelliğini 5 olarak ayarlar. Bu, .panel öğesinin diğer tüm öğelerden daha geniş olmasını sağlar ve daha büyük bir bölgeye sahip olmasını sağlar. Bu, seçili .panel öğesinin öne çıkmasına yardımcı olur. */
+}
+
+.panel.activee h3 {
+  text-decoration: underline;
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+
+  /* Bu CSS kod bloğu, .panel öğesi için active sınıfı eklendiğinde içindeki h3 öğesi için birkaç stil özelliği ayarlar:
+
+text-decoration: underline;: h3 öğesinin altını çizer.
+opacity: 1;: h3 öğesinin görünürlüğünü 1 (tamamen görünür) olarak ayarlar.
+transition: opacity 0.3s ease-in 0.4s;: h3 öğesinin görünürlüğündeki değişikliklerin geçişini kontrol eder. Bu, opacity özelliğinin değişimi 0.3 saniyede gerçekleşecek ve ease-in geçişini kullanarak başlayacak. Ayrıca, 0.4 saniye gecikme (bekleme) süresi de belirlenmiştir, yani bu geçiş, .panel.active sınıfı eklenir eklenmez gerçekleşmeyecek, biraz gecikmeyle gerçekleşecektir. Bu, seçili .panel öğesi genişledikten sonra h3 öğesinin değişimi için bir gecikme sağlar ve daha akıcı bir geçiş sağlar. */
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100vw;
+  }
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+  /* 
+  Bu CSS kod bloğu, ekranın genişliği 600 piksel veya daha küçük olduğunda (yani küçük ekranlar için), birkaç stil özelliği ayarlar:
+
+.container öğesi için width: 100vw; ayarlanır, böylece içerik tam ekran genişliğinde görüntülenir.
+.panel:nth-of-type(4), .panel:nth-of-type(5) seçicisi, .panel öğelerinin 4. ve 5. öğelerini seçer ve bunları gizler (display: none;). Bu, küçük ekranlarda bu iki .panel öğesinin görüntülenmeyeceği anlamına gelir, böylece içerik daha iyi görüntülenebilir. */
+}

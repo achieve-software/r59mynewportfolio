@@ -94,6 +94,16 @@ const Navbar = () => {
               </NavLink>{" "}
               <hr />
             </li>
+            <li className="m-10">
+              <NavLink
+                to="/certificates"
+                className="text-gray-500 font-black    hover:text-black transition duration-300 ease-in-out   "
+                onClick={toggleMenu}
+              >
+                Certificates
+              </NavLink>{" "}
+              <hr />
+            </li>
             {/* Diğer sayfa linkleri buraya eklenebilir */}
           </ul>
         </nav>
