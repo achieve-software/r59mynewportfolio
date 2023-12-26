@@ -2,7 +2,7 @@ import React, {  useState } from "react";
 import PROJECTS from "./../data";
 import Form from "react-bootstrap/Form";
 import { IoLogoGithub } from "react-icons/io5";
-import { FaInternetExplorer } from "react-icons/fa6";
+import { FaEdgeLegacy } from "react-icons/fa";
 
 
 const Projects = () => {
@@ -99,7 +99,7 @@ const Projects = () => {
                         }}
                       />
 
-                      <FaInternetExplorer
+                      <FaEdgeLegacy
                         size={36}
                         style={{
                           color: "#77E8F7",
