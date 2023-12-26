@@ -20,7 +20,7 @@ const About = () => {
               software and coding isn't just a job for me; it's a passion and an
               area of keen interest. Keeping abreast of technological
               advancements and continually enhancing my skills is essential to
-              me.""
+              me."
             </p>
           </div>
           <div className="text-left">
