@@ -1,183 +1,67 @@
- 
-
-a {
-  text-decoration: none;
-}/* MAIN ////////////////////////////////////////////////////////////// */
 main {
-  
-   
   margin: 1rem 1rem 1rem 1rem;
-
 }
-
 main .content {
-  
   padding: 20px;
   margin: 20px;
-
-}main .pg-header {
-  
+}
+main .pg-header {
   padding: 30px 0;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   background-image: linear-gradient(90deg, red 0%, black 40%, blue 100%);
-  
-
-;
-}main .pg-header h1 {
+}
+main .pg-header h1 {
   text-align: center;
   color: white;
   font-weight: bold;
   font-size: 32px;
   text-transform: uppercase;
   margin: 0;
-}/* BUTTON ////////////////////////////////////////////////////////////// */.btn-primary {
-  border-radius: 0;
-}/* BREADCRUMB ////////////////////////////////////////////////////////////// */.breadcrumb {
-  margin-bottom: 0;
-  font-size: 13px;
-}.breadcrumb a {
-  color: #000;
-}@media all and (max-width: 991px) {
-  .breadcrumb.justify-content-end {
-      justify-content: flex-start !important;
-  }
-}/* ABOUT ////////////////////////////////////////////////////////////// */.about h2 {
-  text-transform: uppercase;
-  font-size: 22px;
-  font-weight: 600;
-  padding-bottom: 10px;
-  position: relative;
+}
+.products-row .card .card-body {
+  background: #070681;
+}
+.products-row .col-lg-4 {
   margin-bottom: 20px;
-}.about h2::after {
-  position: absolute;
-  content: '';
-  width: 50px;
-  bottom: -6px;
-  height: 2px;
-  background-color: #666;
-  left: 0;
-}/* PRODUCTS ////////////////////////////////////////////////////////////// */.products-row .card .card-body {
-  background:#070681
-;
-}.products-row .col-lg-4 {
-  margin-bottom: 20px;
-}.products-row .card-text {
+}
+.products-row .card-text {
   color: white;
   font-size: 16px;
   text-align: center;
-}/* CARD ////////////////////////////////////////////////////////////// */.card {
+}
+.card {
   margin-bottom: 4rem;
   border-radius: 0;
   box-shadow: 0px 10px 10px #eee;
- 
-}.card .card-title {
+}
+.card .card-title {
   margin-bottom: 15px;
   text-align: center;
   color: white;
   font-weight: bold;
-}.card .img-wrap {
-  
+}
+.card .img-wrap {
   height: 300px;
   text-align: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   display: flex;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.125);
-}.card .img-wrap img {
-  
+}
+.card .img-wrap img {
   width: 100%;
   max-width: 100%;
   max-height: 100%;
   margin: 0 auto;
   object-fit: cover;
-}.card .price {
-  color: #EA838D;
-  font-weight: bold;
-}.card .btn-primary {
-  font-weight: 600;
-}/* SINGLE PRODUCT ////////////////////////////////////////////////////////////// */.single h2 {
-  text-transform: capitalize;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  position: relative;
-}.single h2::after {
-  position: absolute;
-  content: '';
-  width: 50px;
-  bottom: -6px;
-  height: 2px;
-  background-color: #666;
-  left: 0;
-}.single .btn-primary {
-  font-weight: 600;
-}.single .price {
-  font-size: 22px;
-  
-}.single .price strong {
-  color: #0A58CA
-;
-} /* POSTS ////////////////////////////////////////////////////////////// */.posts .col-sm-6 {
-  margin-bottom: 20px;
-}.posts .card-title {
-  text-transform: capitalize;
-}.posts .card-text {
-  text-align: center;
-}/* HEADER ////////////////////////////////////////////////////////////// */header {
-  padding: 20px 0;
-  background-color: #000;
-}header .logo {
-  transform: rotate(-6deg);
-  transition: all 0.3s ease;
-}header .logo:hover {
-  transform: rotate(0deg);
-}header .brand {
-  font-size: 30px;
-  color: #fff;
-  font-weight: 700;
-  font-family: 'Leckerli One', cursive;
-  background-color: #2D2D2D
-;
-  border-radius: 40px;
-  border-bottom: 2px solid #6294DE
-;
-  text-shadow: 2px 2px 0px #000;
-}header .nav-link {
-  font-weight: 700;
-  color: #999;
-  border-radius: 0;
-  font-size: 14px;
-}header .nav-link:hover {
-  color: #fff;
-}/* FOOTER ////////////////////////////////////////////////////////////// */footer {
-  padding: 40px 0 100px 0;
-  background-color: black;
-   
-  
- 
-}footer .nav-link {
-  color: rgba(255, 255, 255, 0.75);
-  padding-left: 0;
-  padding-right: 0;
-  margin: 0 10px;
-}footer .nav-link:hover {
-  color: #fff;
-}footer .nav-link.active {
-  color: #fff;
-  border-bottom: 1px solid #666;
-}footer .copyrights {
-  color: rgba(255, 255, 255, 0.75);
-  text-align: center;
-  margin-top: 10px;
-}footer .copyrights a {
-  color: rgba(255, 255, 255, 0.75);
-}footer .copyrights a:hover {
-  color: #fff;
 }
-.idin{
+.card .price {
+  color: #ea838d;
+  font-weight: bold;
+}
+.idin {
   color: white;
-   
   font-weight: bold !important;
   background-color: red;
   padding-left: 0.5rem;
-  
 }
