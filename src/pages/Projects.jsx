@@ -44,7 +44,7 @@ const Projects = () => {
       </div>
 
       <Form.Control
-        placeholder="Search a project programming language framework library or package..."
+        placeholder="Search a project, programming language, framework, library or package..."
         type="search"
         className="w-50 m-auto mt-4 "
         style={{
