@@ -27,9 +27,9 @@ const Navbar = () => {
           isOpen ? "block" : "hidden"
         } sm:block `}
       >
-        <div className="flex items-center justify-center mb-10">
+        <div className="flex items-center justify-center mb-2">
           <img
-            className="rounded-full border-2 border-white w-48 h-48"
+            className="rounded-full border-2 border-white w-36 h-36"
             src="./images/dg.png" // Profil fotoğrafınızın URL'sini ekleyin
             alt="Profil"
           />
@@ -39,7 +39,7 @@ const Navbar = () => {
             style={{
               backgroundImage: `url('./images/nj.png')`,
               paddingTop: "1px",
-              height:"70vh"
+              height:"75vh"
             }}
             className="rounded-lg  "
           >
@@ -104,7 +104,7 @@ const Navbar = () => {
               </NavLink>{" "}
               <hr />
             </li>
-            {/* Diğer sayfa linkleri buraya eklenebilir */}
+            
           </ul>
         </nav>
       </div>

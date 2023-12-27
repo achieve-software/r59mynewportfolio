@@ -27,16 +27,16 @@ const Home = () => {
       <Type />
 
       <Soci />
-      <br />
-
-      <TableCard />
-      <br />
-      <br />
     
 
-      <p className="text-sm font-black underline mt-0">
+      <TableCard />
+      <br /> <br />
+      
+       <p className="text-sm font-black underline">
         achieve-software &copy; {currentYear}
       </p>
+       
+      
     </div>
   );
 };
