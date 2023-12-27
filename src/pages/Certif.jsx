@@ -11,7 +11,7 @@ const Certif = () => {
   return (
     <div className="containeree mt-32">
       <div
-        className={`panel ${activePanel === 1 ? "activee" : ""}`}
+        className={`   panel ${activePanel === 1 ? "activee" : ""}`}
         style={{
           backgroundImage: `url('./images/FRONTEND.png')`,
         }}
