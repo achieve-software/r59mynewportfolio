@@ -9,7 +9,7 @@ const Certif = () => {
   };
 
   return (
-    <div className="containeree">
+    <div className="containeree mt-32">
       <div
         className={`panel ${activePanel === 1 ? "activee" : ""}`}
         style={{
