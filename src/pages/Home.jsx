@@ -14,7 +14,7 @@ const Home = () => {
 
       <ul className="text-2xl  text-center font-Dancing Script  ">
         <li className="  font-bold text-center font-serif  animate__animated animate__fadeInDown">
-        Hi, I am Akif Yılmaz.
+        Hi, I am Akif.
         </li>
         <li className="text-xl animate__animated animate__fadeInUp">
           Full Stack Developer
