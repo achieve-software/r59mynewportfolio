@@ -40,6 +40,20 @@ const Certif = () => {
         }}
         onClick={() => handlePanelClick(4)}
       ></div>
+       <div
+        className={`panel ${activePanel === 5 ? "activee" : ""}`}
+        style={{
+          backgroundImage: `url('./images/BCKND.png')`,
+        }}
+        onClick={() => handlePanelClick(5)}
+      ></div>
+      <div
+        className={`panel ${activePanel === 6 ? "activee" : ""}`}
+        style={{
+          backgroundImage: `url('./images/BCKND1.png')`,
+        }}
+        onClick={() => handlePanelClick(6)}
+      ></div>
     </div>
   );
 };
