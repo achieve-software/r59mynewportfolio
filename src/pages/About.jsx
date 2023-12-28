@@ -1,8 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
   const currentYear = new Date().getFullYear();
+  const navigate=useNavigate();
   return (
+   
+
     <div className="w-full">
       <div className="flex items-center justify-center mt-5">
         <img
@@ -46,7 +50,8 @@ const About = () => {
           </button>
         </div>
         <div>
-          <button className="button1">
+          <button className="button1"
+           onClick={()=> navigate(`/certificates`)}>
             <span>CERTİFİCATES</span>
             <div class="top"></div>
             <div class="left"></div>
