@@ -26,10 +26,10 @@ const Home = () => {
       </ul>
       <Type />
 
-      <Soci />
+     
     
 
-      <TableCard />
+     
       <br /> <br />
       
        <p className="text-sm font-black underline">
