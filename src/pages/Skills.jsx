@@ -237,6 +237,7 @@ const Skills = () => {
         </div>
        
       </div>
+      
       <p className="text-center text-sm font-black underline pb-4 m-24">
         achieve-software &copy; {currentYear}
       </p>
