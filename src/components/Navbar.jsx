@@ -69,7 +69,7 @@ const Navbar = () => {
                 className="text-gray-500 font-black    hover:text-black transition duration-300 ease-in-out  "
                 onClick={toggleMenu}
               >
-                Projects
+                My Projects
               </NavLink>{" "}
               <hr />
             </li>
