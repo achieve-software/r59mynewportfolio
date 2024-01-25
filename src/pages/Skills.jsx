@@ -23,11 +23,7 @@ import { DiDjango } from "react-icons/di";
 const Skills = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <div
-       
-      className="w-full bg-cover bg-center  h-screen  text-gray-800 p-10  "
-     
-    >
+    <div className="w-full bg-cover bg-center  h-screen  text-gray-800 p-10  ">
       <div className="container flex justify-evenly  ">
         <div className="frontend  ">
           <div className="foto-fr flex justify-center">
@@ -63,7 +59,7 @@ const Skills = () => {
                   style={{ color: "#8E13FD" }}
                   className="mr-2"
                 />
-                <span  className="mr-2 text-xl   ">Bootstrap</span>
+                <span className="mr-2 text-xl   ">Bootstrap</span>
               </div>
               <div className="flex items-center mt-4">
                 <FaSass
@@ -71,7 +67,7 @@ const Skills = () => {
                   style={{ color: "#FF00FF" }}
                   className="mr-2"
                 />
-                <span  className="mr-2 text-xl   ">Sass</span>
+                <span className="mr-2 text-xl   ">Sass</span>
               </div>
               <div className="flex items-center mt-4  ">
                 <SiMui
@@ -79,7 +75,7 @@ const Skills = () => {
                   style={{ color: "#007FFF" }}
                   className="mr-2"
                 />
-                <span  className="mr-2 text-xl   ">Material UI</span>
+                <span className="mr-2 text-xl   ">Material UI</span>
               </div>
               <div className="flex items-center mt-4  ">
                 <SiAxios
@@ -87,10 +83,9 @@ const Skills = () => {
                   style={{ color: "#000000" }}
                   className="mr-2"
                 />
-                <span  className="mr-2 text-xl   ">Axios</span>
+                <span className="mr-2 text-xl   ">Axios</span>
               </div>
             </div>
-            
             <div className="fr2 mt-10">
               <div className="flex items-center mt-4  ">
                 <SiJquery
@@ -98,7 +93,7 @@ const Skills = () => {
                   style={{ color: "#0865A6" }}
                   className="mr-2"
                 />
-                <span  className="mr-2 text-xl   ">Jquery</span>
+                <span className="mr-2 text-xl   ">Jquery</span>
               </div>
               <div className="flex items-center mt-4  ">
                 <SiTypescript
@@ -106,7 +101,7 @@ const Skills = () => {
                   style={{ color: "#2D79C7" }}
                   className="mr-2"
                 />
-                <span  className="mr-2 text-xl   ">TypeScript</span>
+                <span className="mr-2 text-xl   ">TypeScript</span>
               </div>
               <div className="flex items-center mt-4  ">
                 <FaReact
@@ -114,16 +109,16 @@ const Skills = () => {
                   style={{ color: "#00FFFF" }}
                   className="mr-2"
                 />
-                <span  className="mr-2 text-xl   ">React</span>
+                <span className="mr-2 text-xl   ">React</span>
               </div>
-                 
+
               <div className="flex items-center mt-4  ">
                 <SiTailwindcss
                   size={24}
                   style={{ color: "#24B7F0" }}
                   className="mr-2"
                 />
-                <span  className="mr-2 text-xl   ">Tailwind</span>
+                <span className="mr-2 text-xl   ">Tailwind</span>
               </div>
               <div className="flex items-center mt-4  ">
                 <SiNextdotjs
@@ -131,7 +126,7 @@ const Skills = () => {
                   style={{ color: "#000000" }}
                   className="mr-2"
                 />
-                <span  className="mr-2 text-xl   ">Next.Js</span>
+                <span className="mr-2 text-xl   ">Next.Js</span>
               </div>
               <div className="flex items-center mt-4  ">
                 <SiStyledcomponents
@@ -139,10 +134,9 @@ const Skills = () => {
                   style={{ color: "#E7927B" }}
                   className="mr-2"
                 />
-                <span  className="mr-2 text-xl   ">Styled-Components</span>
+                <span className="mr-2 text-xl   ">Styled-Components</span>
               </div>
             </div>
-            
           </div>
         </div>
         <div>
@@ -171,7 +165,7 @@ const Skills = () => {
                   style={{ color: "#68A063" }}
                   className="mr-2"
                 />
-                <span  className="mr-2 text-xl   ">Node.js</span>
+                <span className="mr-2 text-xl   ">Node.js</span>
               </div>
               <div className="flex items-center mt-4">
                 <SiExpress
@@ -179,7 +173,7 @@ const Skills = () => {
                   style={{ color: "#E9BE0F" }}
                   className="mr-2"
                 />
-                <span  className="mr-2 text-xl   ">Express.js</span>
+                <span className="mr-2 text-xl   ">Express.js</span>
               </div>
               <div className="flex items-center mt-4">
                 <AiOutlineConsoleSql
@@ -187,7 +181,7 @@ const Skills = () => {
                   style={{ color: "#D47131" }}
                   className="mr-2"
                 />
-                <span  className="mr-2 text-xl   ">SQL</span>
+                <span className="mr-2 text-xl   ">SQL</span>
               </div>
               <div className="flex items-center mt-4">
                 <DiSqllite
@@ -195,7 +189,7 @@ const Skills = () => {
                   style={{ color: "#1F7C8B" }}
                   className="mr-2"
                 />
-                <span  className="mr-2 text-xl   ">Sqlite</span>
+                <span className="mr-2 text-xl   ">Sqlite</span>
               </div>
             </div>
             <div className="bck2 mt-10">
@@ -206,7 +200,7 @@ const Skills = () => {
                   style={{ color: "#305D8D" }}
                   className="mr-2"
                 />
-                <span  className="mr-2 text-xl   ">PostgreSQL</span>
+                <span className="mr-2 text-xl   ">PostgreSQL</span>
               </div>
               <div className="flex items-center mt-4">
                 <SiMysql
@@ -214,7 +208,7 @@ const Skills = () => {
                   style={{ color: "#E58E01" }}
                   className="mr-2"
                 />
-                <span  className="mr-2 text-xl   ">MySQL</span>
+                <span className="mr-2 text-xl   ">MySQL</span>
               </div>
               <div className="flex items-center mt-4">
                 <SiMongodb
@@ -222,7 +216,7 @@ const Skills = () => {
                   style={{ color: "#4DA53F" }}
                   className="mr-2"
                 />
-                <span  className="mr-2 text-xl   ">MongoDB</span>
+                <span className="mr-2 text-xl   ">MongoDB</span>
               </div>
               <div className="flex items-center mt-4">
                 <DiDjango
@@ -230,18 +224,16 @@ const Skills = () => {
                   style={{ color: "#003A2B" }}
                   className="mr-2"
                 />
-                <span  className="mr-2 text-xl   ">Django</span>
+                <span className="mr-2 text-xl   ">Django</span>
               </div>
             </div>
           </div>
         </div>
-       
       </div>
-      
+
       <p className="text-center text-sm font-black underline pb-4 m-24">
         achieve-software &copy; {currentYear}
       </p>
-      
     </div>
   );
 };
