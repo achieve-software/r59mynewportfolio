@@ -5,8 +5,7 @@
 .containeree {
   display: flex;
   width: 90vw;
-  /* display: flex;: .container öğesinin bir esnek kutu olarak davranmasını sağlar. Bu, öğeleri yatay veya dikey olarak hizalamak için kullanılabilir.
-width: 90vw;: .container öğesinin genişliğini görüntü alanının %90'ı olarak ayarlar. vw, viewport (görüntü alanı) genişliği birimi olarak kullanılır ve sayfanın görüntülenebilir bölgesinin %1'ine eşittir. Bu stil özelliği, .container öğesinin genişliğini, sayfanın görüntülenebilir bölgesine göre ölçeklendirir ve mobil cihazlarda diğer cihazlara göre daha küçük olduğu için, sayfanın farklı boyutlarda görüntülenmesine uygun bir şekilde ölçeklendirir. */
+  
 }
 
 .panel {
@@ -21,16 +20,7 @@ width: 90vw;: .container öğesinin genişliğini görüntü alanının %90'ı o
   position: relative;
   transition: flex 0.7s ease-in;
 
-  /* background-size: auto 100%;: Arka plan resminin boyutunu ayarlar, burada auto genişliği orijinal genişliğinde kalırken, yüksekliği %100 olarak ayarlanır.
-background-position: center;: Arka plan resminin pozisyonunu ortalar.
-background-repeat: no-repeat;: Arka plan resminin tekrarlanmamasını sağlar.
-height: 80vh;: .panel öğesinin yüksekliğini görüntü alanının %80'ine eşit olarak ayarlar.
-border-radius: 50px;: .panel öğesinin köşelerinin yuvarlanmasını sağlar. 50px değeri, köşelerin yuvarlaklığı için kullanılan piksel değeridir.
-cursor: pointer;: .panel öğesi üzerine geldiğinde, fare imlecinin bir el işaretçisine dönüşmesini sağlar.
-flex: 0.5;: .panel öğesinin, ebeveyn kutu içindeki esnek kutu düzenindeki genişlik oranını belirler. Bu değer, .panel öğesi ile diğer öğeler arasındaki genişlik oranını ayarlamak için kullanılabilir.
-margin: 10px;: .panel öğesinin dört kenarındaki kenar boşluğunu 10px olarak ayarlar.
-position: relative;: .panel öğesinin konumunu göreceli olarak ayarlar. Bu, .panel öğesinin, içinde bulunduğu ebeveyn kutusuna göre konumunu ayarlayabilmesini sağlar.
-transition: flex 0.7s ease-in;: .panel öğesinin esnek kutu özelliği ile ilgili animasyonu ayarlar. Bu animasyon, flex özelliğinin 0.7 saniyede geçiş yapmasını ve ease-in hareket eğrisi kullanarak yavaşça başlamasını sağlar. */
+ 
 }
 
 .panel h3 {
@@ -41,19 +31,12 @@ transition: flex 0.7s ease-in;: .panel öğesinin esnek kutu özelliği ile ilgi
   margin: 0px;
   opacity: 0;
 
-  /* font-size: 24px;: h3 öğesi için yazı tipi boyutunu 24px olarak ayarlar.
-position: absolute;: h3 öğesinin konumunu, içinde bulunduğu .panel öğesine göre mutlak bir pozisyonda belirler.
-bottom: 20px;: h3 öğesinin alt kenarının .panel öğesinin alt kenarından 20px yukarıda olmasını sağlar.
-left: 50%;: h3 öğesinin sol kenarının .panel öğesinin ortasında olmasını sağlar.
-margin: 0px;: h3 öğesinin dört kenarındaki kenar boşluğunu sıfırlar.
-opacity: 0;: h3 öğesinin görünürlüğünü sıfırlar, yani öğe sayfada görünmez olur. */
+ 
 }
 .panel.activee {
   flex: 5;
 
-  /* Bu CSS kod bloğu, .panel öğesi için active sınıfı eklendiğinde stil özelliği ayarlar:
-
-flex: 5;: .panel öğesinin flex özelliğini 5 olarak ayarlar. Bu, .panel öğesinin diğer tüm öğelerden daha geniş olmasını sağlar ve daha büyük bir bölgeye sahip olmasını sağlar. Bu, seçili .panel öğesinin öne çıkmasına yardımcı olur. */
+ 
 }
 
 .panel.activee h3 {
