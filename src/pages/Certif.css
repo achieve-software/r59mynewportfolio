@@ -44,11 +44,7 @@
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;
 
-  /* Bu CSS kod bloğu, .panel öğesi için active sınıfı eklendiğinde içindeki h3 öğesi için birkaç stil özelliği ayarlar:
-
-text-decoration: underline;: h3 öğesinin altını çizer.
-opacity: 1;: h3 öğesinin görünürlüğünü 1 (tamamen görünür) olarak ayarlar.
-transition: opacity 0.3s ease-in 0.4s;: h3 öğesinin görünürlüğündeki değişikliklerin geçişini kontrol eder. Bu, opacity özelliğinin değişimi 0.3 saniyede gerçekleşecek ve ease-in geçişini kullanarak başlayacak. Ayrıca, 0.4 saniye gecikme (bekleme) süresi de belirlenmiştir, yani bu geçiş, .panel.active sınıfı eklenir eklenmez gerçekleşmeyecek, biraz gecikmeyle gerçekleşecektir. Bu, seçili .panel öğesi genişledikten sonra h3 öğesinin değişimi için bir gecikme sağlar ve daha akıcı bir geçiş sağlar. */
+  
 }
 
 @media (max-width: 600px) {
@@ -59,9 +55,5 @@ transition: opacity 0.3s ease-in 0.4s;: h3 öğesinin görünürlüğündeki de�
   .panel:nth-of-type(5) {
     display: none;
   }
-  /* 
-  Bu CSS kod bloğu, ekranın genişliği 600 piksel veya daha küçük olduğunda (yani küçük ekranlar için), birkaç stil özelliği ayarlar:
-
-.container öğesi için width: 100vw; ayarlanır, böylece içerik tam ekran genişliğinde görüntülenir.
-.panel:nth-of-type(4), .panel:nth-of-type(5) seçicisi, .panel öğelerinin 4. ve 5. öğelerini seçer ve bunları gizler (display: none;). Bu, küçük ekranlarda bu iki .panel öğesinin görüntülenmeyeceği anlamına gelir, böylece içerik daha iyi görüntülenebilir. */
+  
 }
