@@ -1,11 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Inter:wght@700&display=swap");
 
- 
-
 .containeree {
   display: flex;
   width: 90vw;
-  
 }
 
 .panel {
@@ -19,8 +16,6 @@
   margin: 10px;
   position: relative;
   transition: flex 0.7s ease-in;
-
- 
 }
 
 .panel h3 {
@@ -30,21 +25,15 @@
   left: 50%;
   margin: 0px;
   opacity: 0;
-
- 
 }
 .panel.activee {
   flex: 5;
-
- 
 }
 
 .panel.activee h3 {
   text-decoration: underline;
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;
-
-  
 }
 
 @media (max-width: 600px) {
@@ -55,5 +44,4 @@
   .panel:nth-of-type(5) {
     display: none;
   }
-  
 }
