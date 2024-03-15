@@ -42,7 +42,7 @@ const About = () => {
       <div className="flex  justify-evenly mt-3">
         <div>
           <button className="button1">
-            <span>MY CV</span>
+            <span>MY-CV</span>
             <div class="top"></div>
             <div class="left"></div>
             <div class="bottom"></div>
