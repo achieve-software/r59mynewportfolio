@@ -11,7 +11,7 @@ const About = () => {
       <div className="flex items-center justify-center mt-5">
         <img
           className="rounded-full border-2 border-zinc-600 shadow-lg w-48 h-48"
-          src="./images/tt.jpg" // Profil fotoğrafınızın URL'sini ekleyin
+          src="./images/tt.jpg" 
           alt="Profil"
         />
       </div>
