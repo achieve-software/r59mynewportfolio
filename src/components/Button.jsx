@@ -11,7 +11,7 @@ const Button = () => {
     <button className='button1'
     onClick={()=> navigate(`/projects`)}>
       
-    <span>MY-PROJECTS</span>
+    <span>MY PROJECTS</span>
     <div class="top"></div>
     <div class="left"></div>
     <div class="bottom"></div>
