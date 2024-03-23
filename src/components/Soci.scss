@@ -24,17 +24,7 @@ $color_5: white;
 			display: inline-block;
 		  }
 		  
-		  .social-name {
-			color: black;
-			font-weight: bolder;
-			font-size: large;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(40%, -40%);
-			opacity: 0; /* Başlangıçta gizli olacak */
-			transition: opacity 0.3s ease-in-out; /* Geçiş efekti */
-		  }
+		
 		  
 		  .social-link:hover .social-name {
 			opacity: 1; /* Üzerine gelindiğinde görünür olacak */
